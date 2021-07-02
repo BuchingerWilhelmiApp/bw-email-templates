@@ -99,7 +99,6 @@
       }
 
       table.body {
-        background: #e5e5e5;
         height: 100%;
         width: 100%;
       }
@@ -1056,15 +1055,6 @@
         line-height: 1.6;
       }
 
-      p.blue-lead {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #5bb6d6;
-        width: 100%;
-        margin: 1.1rem 0;
-        font-weight: 600;
-      }
-
       p.subheader {
         margin-top: 4px;
         margin-bottom: 8px;
@@ -1663,11 +1653,6 @@
         margin-bottom: 0;
       }
 
-      .header .wrapper-inner {
-        /* padding: 20px; */
-        /*controls the height of the header*/
-      }
-
       .header .container {
         background: #8a8a8a;
       }
@@ -1680,14 +1665,18 @@
 
   <body>
     <!-- <style> -->
-    <table class="body" data-made-with-foundation="">
+    <table
+      class="body"
+      data-made-with-foundation=""
+      style="background: #e5e5e5"
+    >
       <tr>
-        <td class="float-center" align="center" valign="top">
+        <td valign="top">
           <center data-parsed="">
-            <table align="center" class="wrapper header float-center">
+            <table>
               <tr>
                 <td class="wrapper-inner">
-                  <table align="center" class="container">
+                  <table class="container">
                     <tbody>
                       <tr>
                         <td>
@@ -1755,17 +1744,19 @@
                         </tr>
                       </tbody>
                     </table>
-                    <table class="row">
+                    <table class="row" style="background-color: white">
                       <tbody>
                         <tr>
                           <th class="small-12 large-12 columns first last">
                             <table>
                               <tr>
                                 <th>
-                                  <h6 style="font-weight: bold">
+                                  <h5
+                                    style="font-weight: bold; text-align: left"
+                                  >
                                     Contact Details
-                                  </h6>
-                                  <p>
+                                  </h5>
+                                  <p style="text-align: left">
                                     We’re happy to welcome you again in our
                                     house.
                                   </p>
@@ -1774,78 +1765,141 @@
                                       <td>
                                         <table>
                                           <tr>
-                                            <p class="blue-lead">
+                                            <p
+                                              style="
+                                                font-size: 16px;
+                                                line-height: 1.6;
+                                                color: #5bb6d6;
+                                                width: 100%;
+                                                margin: 1.1rem 0;
+                                                font-weight: 600;
+                                                text-align: left;
+                                              "
+                                            >
                                               Your personal Information
                                             </p>
                                           </tr>
-
                                           <tr>
                                             <td>
                                               <p>Name</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Klaus-Dieter Krüger</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="
+                                                padding-left: 64.33333px;
+                                                text-align: left;
+                                              "
+                                            >
+                                              <p style="text-align: left">
+                                                Klaus-Dieter Krüger
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Gender</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Male</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="
+                                                padding-left: 64.33333px;
+                                                text-align: center;
+                                              "
+                                            >
+                                              <p style="text-align: left">
+                                                Male
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Date of birth</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>07.10.1979</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                07.10.1979
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Place of birth</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>-</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Berlin
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Job</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>klemptner</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                klemptner
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Nationality</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Deutsch</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Deutsch
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Language(s)</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Deutsch, Spanish</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Deutsch, Spanish
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Vortrag</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>No</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">No</p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
-                                              <p class="blue-lead">
+                                              <p
+                                                class="blue-lead"
+                                                style="
+                                                  font-size: 16px;
+                                                  line-height: 1.6;
+                                                  color: #5bb6d6;
+                                                  width: 100%;
+                                                  margin: 1.1rem 0;
+                                                  font-weight: 600;
+                                                "
+                                              >
                                                 Your Contact Information
                                               </p>
                                             </td>
@@ -1854,8 +1908,11 @@
                                             <td>
                                               <p>Email</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
                                                 kd.krueger@buchinger-wilhelmi.com
                                               </p>
                                             </td>
@@ -1864,10 +1921,13 @@
                                             <td>
                                               <p>Address</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>
-                                                hinterm blocks123654
-                                                kirchlintenDeutschland
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                hinterm, blocks123654,
+                                                kirchlinten, Deutschland
                                               </p>
                                             </td>
                                           </tr>
@@ -1875,45 +1935,76 @@
                                             <td>
                                               <p>Phone</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>160722255554</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                160722255554
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Other Phone</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>-</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">-</p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Fax</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>-</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">-</p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Emergency Contact</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Frau | Phone: 0125787944</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Frau | Phone: 0125787944
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
-                                              <p class="blue-lead">Your Stay</p>
+                                              <p
+                                                class="blue-lead"
+                                                style="
+                                                  font-size: 16px;
+                                                  line-height: 1.6;
+                                                  color: #5bb6d6;
+                                                  width: 100%;
+                                                  margin: 1.1rem 0;
+                                                  font-weight: 600;
+                                                "
+                                              >
+                                                Your Stay
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Reason for the stay</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
                                                 Acute illness: Lorem, ipsum
                                                 dolor sit amet consectetur
                                                 adipisicing elit. Labore ipsum
@@ -1926,37 +2017,67 @@
                                             <td>
                                               <p>Arrival</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>07.05.2021</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                07.05.2021
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Departure</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>17.05.2021</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                17.05.2021
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Media</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>no tv requested</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                no tv requested
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Therapy Wish</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Fasting</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Fasting
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
-                                              <p class="blue-lead">
+                                              <p
+                                                class="blue-lead"
+                                                style="
+                                                  font-size: 16px;
+                                                  line-height: 1.6;
+                                                  color: #5bb6d6;
+                                                  width: 100%;
+                                                  margin: 1.1rem 0;
+                                                  font-weight: 600;
+                                                "
+                                              >
                                                 Your health Information
                                               </p>
                                             </td>
@@ -1965,40 +2086,63 @@
                                             <td>
                                               <p>Weight</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>120 kg</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                120 kg
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Height</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>180 cm</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                180 cm
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Allergies</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Nuts, pears, horses</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Nuts, pears, horses
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Support needed</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Yes</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Yes
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Contraindicative diseases</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
                                                 Serious substance dependence
                                                 (alcohol, drugs)
                                               </p>
@@ -2008,8 +2152,11 @@
                                             <td>
                                               <p>Medication</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
                                                 Medicine namedaily dosage: 5 mg
                                                 / IEmorning dosage: 5 mg /
                                                 IEnoon dosage: 0 mg / IEevening
@@ -2022,21 +2169,41 @@
                                             <td>
                                               <p>Covid test result</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Negative</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Negative
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Covid symptoms</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>No symptoms</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                No symptoms
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
-                                              <p class="blue-lead">
+                                              <p
+                                                class="blue-lead"
+                                                style="
+                                                  font-size: 16px;
+                                                  line-height: 1.6;
+                                                  color: #5bb6d6;
+                                                  width: 100%;
+                                                  margin: 1.1rem 0;
+                                                  font-weight: 600;
+                                                "
+                                              >
                                                 Further Information
                                               </p>
                                             </td>
@@ -2045,24 +2212,39 @@
                                             <td>
                                               <p>Recommendation by</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>Friend: Hunter</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                Friend: Hunter
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Given consent</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>You have agreed to...</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                You have agreed to...
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
                                               <p>Filled out date:</p>
                                             </td>
-                                            <td class="large-offset-1">
-                                              <p>07.05.2021, 19:06</p>
+                                            <td
+                                              class="large-offset-1"
+                                              style="padding-left: 64.33333px"
+                                            >
+                                              <p style="text-align: left">
+                                                07.05.2021, 19:06
+                                              </p>
                                             </td>
                                           </tr>
                                           <tr>
