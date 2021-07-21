@@ -123,7 +123,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; font-style: italic; padding: 0px; margin: 0px; vertical-align: top;">Name</p>
+                                                <p style="font-size: 16px; font-style: italic; vertical-align: top;">Name</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -319,6 +319,26 @@
                                         <tr>
                                             <td>
                                                 <p style="font-size: 16px; color: #EC6F6F;">[if 'exclusionDiabetes' true: “Diabetes mellitus Type 1”], [if 'exclusionCancer' true: “Active cancer disease”], [if 'exclusionDrugs' true: “Serious substance dependence (alcohol, drugs)”], [if 'exclusionEatingDis' true: “Eating disorders (e.g. anorexia, bulimia)”], [if 'noExclusion' false: “No contraindicative disease”]</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="width: 350px; vertical-align: top;">
+                                    <table style="border-spacing: 0!important;">
+                                        <tr>
+                                            <td>
+                                                <p style="font-size: 16px; font-style: italic;">Medikamente</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="width: 350px;">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p style="font-size: 16px">[if 'medicationGeneral' false: “-”] [if 'medicationGeneral' true: [‘name’ <br> “daily dosage:” 'daily_dosage' “mg / IE”<br> ”morning dosage:” 'dosage_morning' “mg / IE”<br> ”noon dosage:” 'dosage_noon' “mg / IE”<br> ”evening dosage:” 'dosage_evening' “mg / IE”<br> ”night dosage:” 'dosage_night' “mg / IE”<br>]]</p>
                                             </td>
                                         </tr>
                                     </table>
