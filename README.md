@@ -6,3 +6,5 @@
 ## Styling
 
 Styling of the email templates is done with [Foundation for emails](https://get.foundation/emails.html)
+
+Inline done with https://putsmail.com/inliner#inliner_result_container
