@@ -112,7 +112,8 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <h1 style="font-family: sans-serif; font-size: 18px; font-weight: bold; margin: 0; margin-bottom: 45px;">Hinweis: Neuer Fasten-Wunsch mit Kontraindikation</h1>
-                        <p>[title] [lastName] [firstName], ([age]) möchte bei uns im Hause vom [arrivalDate] - [departureDate] fasten und hat die Kontraindikation [if 'exclusionDiabetes' true: “Diabetes mellitus Type 1”], [if 'exclusionCancer' true: “Active cancer disease”], [if 'exclusionDrugs' true: “Serious substance dependence (alcohol, drugs)”], [if 'exclusionEatingDis' true: “Eating disorders (e.g. anorexia, bulimia)”] angegeben.</p>
+                        <p>[FULLNAME], ([age] Jahre alt) möchte bei uns im Hause vom [arrivalDate] - [departureDate] fasten und hat folgende Kontraindikation angegeben:</p>
+                        <p>[CONTRAINDICATIONTEXT]</p>
 
                         <!-- Patientendaten -->
 
@@ -132,7 +133,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; padding: 0px; margin: 0px;">[title] [lastName] [firstName]</p>
+                                                <p style="font-size: 16px; padding: 0px; margin: 0px;">[FULLNAME]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -192,7 +193,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[if 'languageGerman' true: “D”], [if 'languageEnglish' true: “EN”], [if 'languageFrench' true: “FR”], [if 'languageSpanish' true: “ES”]</p>
+                                                <p style="font-size: 16px">[LANGUAGES]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -238,7 +239,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[if 'reasonPrevention' true: “Prevention”], [if 'reasonRegeneration' true: “Regeneration”], [if 'reasonWeight' true: “Weight reduction”], [if 'reasonSmoke' true: “Smoking cessation”], [if 'reasonAcute' true: show “Acute illness:” 'reasonAcuteDetail'],  [if 'reasonChronic' true: show “Chronic illness:” 'reasonChronicDetail'], [if 'reasonLocomotive' true: show “Diseases of the locomotor system:” 'reasonLocomotiveDetail'], [if 'reasonDigestive' true: show “Diseases of the digestive system:” 'reasonDigestiveDetail'],</p>
+                                                <p style="font-size: 16px">[MOTIVATIONTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -258,7 +259,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[weight] kg | [height] cm | BMI: [bmi]</p>
+                                                <p style="font-size: 16px">[STATURTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -278,7 +279,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[if 'disabilityFood' true: show 'disabilityFoodDetail'],  [if 'disabilityMedAllergy' true: show 'disabilityMedAllergyDetail']</p>
+                                                <p style="font-size: 16px">[ALLERGIESTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -298,7 +299,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[if 'disabilityLocomotion' true: show 'disabilityLocomotionDetail'], [if 'disabilityHelp' true: show 'disabilityHelpDetail']</p>
+                                                <p style="font-size: 16px">[SUPPORTTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -318,7 +319,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; color: #EC6F6F;">[if 'exclusionDiabetes' true: “Diabetes mellitus Type 1”], [if 'exclusionCancer' true: “Active cancer disease”], [if 'exclusionDrugs' true: “Serious substance dependence (alcohol, drugs)”], [if 'exclusionEatingDis' true: “Eating disorders (e.g. anorexia, bulimia)”], [if 'noExclusion' false: “No contraindicative disease”]</p>
+                                                <p style="font-size: 16px; color: #EC6F6F;">[CONTRAINDICATIONTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -338,7 +339,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[if 'medicationGeneral' false: “-”] [if 'medicationGeneral' true: [‘name’ <br> “daily dosage:” 'daily_dosage' “mg / IE”<br> ”morning dosage:” 'dosage_morning' “mg / IE”<br> ”noon dosage:” 'dosage_noon' “mg / IE”<br> ”evening dosage:” 'dosage_evening' “mg / IE”<br> ”night dosage:” 'dosage_night' “mg / IE”<br>]]</p>
+                                                <p style="font-size: 16px">[MEDICATIONTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -358,7 +359,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[isCovidPositive] | [if 'isCovidPositive' true && 'isCovidPositive' false: “no symptoms”] [if 'isCovidPositive' true && 'isCovidPositive' true: “having symptoms”]</p>
+                                                <p style="font-size: 16px">[COVIDTABLE]</p>
                                             </td>
                                         </tr>
                                     </table>
