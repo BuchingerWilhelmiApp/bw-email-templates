@@ -97,20 +97,18 @@
 
     <tr style="background-color: #e5e5e5;">
         <td style="padding: 1rem">
-            <p>Dear [GENDERTITLE] [LASTNAME],</p>
+            <p>{DEAR} [GENDERTITLE] [LASTNAME],</p>
             <p>
-            we have just received your registration for your stay from
-            [ARRIVAL] to [DEPARTURE] at our clinic in [CLINIC].
+            {intro1}
             </p>
             <h1>
-            Thank you very much for providing your information and
-            your time.
+            {header1}
             </h1>
             <p class="lead">
-            Now we can perfectly prepare your stay. Enclosed you will
-            find a summary of the data we have saved at our internal
-            servers. Please let us know if any information changes or
-            is incorrect.
+            {intro2}
+            </p>
+            <p class="lead">
+            {WELCOME_AGAIN}
             </p>
         </td>
     </tr>
@@ -119,11 +117,11 @@
     <!-- TEST -->
     <tr>
         <td>
-            <h2>Your personal Information</h2>
+            <h2>{heading_information}</h2>
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Name</p>
+                            <p class="text first">{info_name}</p>
                         </td>
                         <td class="data">
                             <p class="text">[FULLNAME]</p>
@@ -133,7 +131,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Gender</p>
+                            <p class="text first">{info_gender}</p>
                         </td>
                         <td class="data">
                             <p class="text">[GENDER]</p>
@@ -143,7 +141,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Date of birth</p>
+                            <p class="text first">{info_birthday}</p>
                         </td>
                         <td class="data">
                             <p class="text">[BIRTHDAY]</p>
@@ -153,7 +151,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Place of birth</p>
+                            <p class="text first">{info_placeofbirth}</p>
                         </td>
                         <td class="data">
                             <p class="text">[BIRTHPLACE]</p>
@@ -163,7 +161,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Job</p>
+                            <p class="text first">{info_job}</p>
                         </td>
                         <td class="data">
                             <p class="text">[JOB]</p>
@@ -173,7 +171,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Nationality</p>
+                            <p class="text first">{info_nationality}</p>
                         </td>
                         <td class="data">
                             <p class="text">[NATIONALITY]</p>
@@ -183,17 +181,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Job</p>
-                        </td>
-                        <td class="data">
-                            <p class="text">[JOB]</p>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td class="data">
-                            <p class="text first">Language(s)</p>
+                            <p class="text first">{info_languages}</p>
                         </td>
                         <td class="data">
                             <p class="text">[LANGUAGES]</p>
@@ -203,7 +191,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Talk</p>
+                            <p class="text first">{info_talk}</p>
                         </td>
                         <td class="data">
                             <p class="text">[TALK]</p>
@@ -214,11 +202,11 @@
         </tr>
         <tr>
             <td>
-                <h2>Your Contact Information</h2>
+                <h2>{heading_contactinfo}</h2>
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Email</p>
+                            <p class="text first">{info_email}</p>
                         </td>
                         <td class="data">
                             <p class="text">[EMAIL]</p>
@@ -228,7 +216,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Address</p>
+                            <p class="text first">{info_address}</p>
                         </td>
                         <td class="data">
                             <p class="text">[FULLADDRESS]</p>
@@ -238,7 +226,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Phone</p>
+                            <p class="text first">{info_phone}</p>
                         </td>
                         <td class="data">
                             <p class="text">[PHONE]</p>
@@ -248,7 +236,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Other Phone</p>
+                            <p class="text first">{info_otherphone}</p>
                         </td>
                         <td class="data">
                             <p class="text">[OTHERPHONE]</p>
@@ -258,7 +246,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Fax</p>
+                            <p class="text first">{info_fax}</p>
                         </td>
                         <td class="data">
                             <p class="text">[FAX]</p>
@@ -268,7 +256,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Emergency Contact</p>
+                            <p class="text first">{info_emergencycontact}</p>
                         </td>
                         <td class="data">
                             <p class="text">[EMERGENCYCONTACT]</p>
@@ -279,11 +267,11 @@
         </tr>
         <tr>
             <td>
-                <h2>Your Stay</h2>
+                <h2>{heading_yourstay}</h2>
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Reason for the stay</p>
+                            <p class="text first">{info_reason}</p>
                         </td>
                         <td class="data">
                             <p class="text">[REASONTEXT]</p>
@@ -293,7 +281,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Arrival</p>
+                            <p class="text first">{info_arrival}</p>
                         </td>
                         <td class="data">
                             <p class="text">[ARRIVAL]</p>
@@ -303,7 +291,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Departure</p>
+                            <p class="text first">{info_departure}</p>
                         </td>
                         <td class="data">
                             <p class="text">[DEPARTURE]</p>
@@ -313,7 +301,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Media</p>
+                            <p class="text first">{info_media}</p>
                         </td>
                         <td class="data">
                             <p class="text">[MEDIA]</p>
@@ -323,7 +311,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Therapy Wish</p>
+                            <p class="text first">{info_therapytype}</p>
                         </td>
                         <td class="data">
                             <p class="text">[THERAPY]</p>
@@ -334,11 +322,11 @@
         </tr>
         <tr>
             <td>
-                <h2>Your health Information</h2>
+                <h2>{heading_healthinfo}</h2>
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Weight</p>
+                            <p class="text first">{info_weight}</p>
                         </td>
                         <td class="data">
                             <p class="text">[WEIGHT] kg</p>
@@ -348,7 +336,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Height</p>
+                            <p class="text first">{info_height}</p>
                         </td>
                         <td class="data">
                             <p class="text">[HEIGHT] cm</p>
@@ -358,7 +346,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Allergies</p>
+                            <p class="text first">{info_allergies}</p>
                         </td>
                         <td class="data">
                             <p class="text">[ALLERGIESTEXT]</p>
@@ -368,7 +356,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Support needed</p>
+                            <p class="text first">{info_support}</p>
                         </td>
                         <td class="data">
                             <p class="text">[SUPPORT]</p>
@@ -378,7 +366,7 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">Contraindicative diseases</p>
+                            <p class="text first">{info_contra}</p>
                         </td>
                         <td class="data">
                             <p class="text">[EXCLUSION]</p>
@@ -394,7 +382,7 @@
 
     <tr>
         <td>
-            <h2>Medication</h2>
+            <h2>{heading_medication}</h2>
             <table style="width: 100%; padding: 10px;">
             <th>
                 <tr>
@@ -427,11 +415,11 @@
 
     <tr>
         <td>
-            <h2>Further Information</h2>
+            <h2>{heading_furtherinfo}</h2>
             <table>
                 <tr>
                     <td class="data">
-                        <p class="text first">Recommendation by</p>
+                        <p class="text first">{info_recommendation}</p>
                     </td>
                     <td class="data">
                         <p class="text">[RECOMMENDATIONTEXT]</p>
@@ -441,7 +429,7 @@
             <table>
                 <tr>
                     <td class="data">
-                        <p class="text first">Given consent</p>
+                        <p class="text first">{info_consent}</p>
                     </td>
                     <td class="data">
                         <p class="text">[CONSENTTEXT]</p>
@@ -451,7 +439,7 @@
             <table>
                 <tr>
                     <td class="data">
-                        <p class="text first">Filled out date:</p>
+                        <p class="text first">{info_filledout}</p>
                     </td>
                     <td class="data">
                         <p class="text">[FILLEDOUTTIME]</p>
@@ -469,10 +457,7 @@
         <td>
             <table>
                 <p style="margin-left: 12px;">
-                    <b> anything wrong or should be
-                    changed?<br />
-                    Let us know via</b>
-                    [email].
+                    <b>{footer_change}</b>
                 </p>
             </table>
         </td>

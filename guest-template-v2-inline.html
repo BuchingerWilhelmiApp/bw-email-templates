@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest Email Template</title>
-
+    
   </head>
   <body style="margin:0;background-color:#cccccc;">
     <center class="wrapper" style="width:100%;table-layout:fixed;background-color:#e5e5e5;padding-bottom:60px;">
@@ -19,31 +19,29 @@
         <!-- GREETING -->
         <tr style="background-color: #e5e5e5;">
           <td style="padding:0;padding: 1rem;">
-            <p>Dear [GENDERTITLE] [LASTNAME],</p>
+            <p>{DEAR} [GENDERTITLE] [LASTNAME],</p>
             <p>
-              we have just received your registration for your stay from
-            [ARRIVAL] to [DEPARTURE] at our clinic in [CLINIC].
+              {intro1}
             </p>
             <h1>
-              Thank you very much for providing your information and
-            your time.
+              {header1}
             </h1>
             <p class="lead">
-              Now we can perfectly prepare your stay. Enclosed you will
-            find a summary of the data we have saved at our internal
-            servers. Please let us know if any information changes or
-            is incorrect.
+              {intro2}
+            </p>
+            <p class="lead">
+              {WELCOME_AGAIN}
             </p>
           </td>
         </tr>
         <!-- TEST -->
         <tr>
           <td style="padding:0;">
-            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">Your personal Information</h2>
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_information}</h2>
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Name</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_name}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[FULLNAME]</p>
@@ -53,7 +51,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Gender</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_gender}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[GENDER]</p>
@@ -63,7 +61,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Date of birth</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_birthday}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[BIRTHDAY]</p>
@@ -73,7 +71,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Place of birth</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_placeofbirth}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[BIRTHPLACE]</p>
@@ -83,7 +81,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Job</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_job}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[JOB]</p>
@@ -93,7 +91,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Nationality</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_nationality}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[NATIONALITY]</p>
@@ -103,17 +101,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Job</p>
-                </td>
-                <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text" style="font-size:16px;margin:0;">[JOB]</p>
-                </td>
-              </tr>
-            </table>
-            <table style="border-spacing:0;">
-              <tr>
-                <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Language(s)</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_languages}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[LANGUAGES]</p>
@@ -123,7 +111,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Talk</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_talk}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[TALK]</p>
@@ -134,11 +122,11 @@
         </tr>
         <tr>
           <td style="padding:0;">
-            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">Your Contact Information</h2>
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_contactinfo}</h2>
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Email</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_email}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[EMAIL]</p>
@@ -148,7 +136,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Address</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_address}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[FULLADDRESS]</p>
@@ -158,7 +146,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Phone</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_phone}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[PHONE]</p>
@@ -168,7 +156,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Other Phone</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_otherphone}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[OTHERPHONE]</p>
@@ -178,7 +166,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Fax</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_fax}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[FAX]</p>
@@ -188,7 +176,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Emergency Contact</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_emergencycontact}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[EMERGENCYCONTACT]</p>
@@ -199,11 +187,11 @@
         </tr>
         <tr>
           <td style="padding:0;">
-            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">Your Stay</h2>
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_yourstay}</h2>
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Reason for the stay</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_reason}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[REASONTEXT]</p>
@@ -213,7 +201,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Arrival</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_arrival}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[ARRIVAL]</p>
@@ -223,7 +211,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Departure</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_departure}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[DEPARTURE]</p>
@@ -233,7 +221,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Media</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_media}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[MEDIA]</p>
@@ -243,7 +231,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Therapy Wish</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_therapytype}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[THERAPY]</p>
@@ -254,11 +242,11 @@
         </tr>
         <tr>
           <td style="padding:0;">
-            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">Your health Information</h2>
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_healthinfo}</h2>
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Weight</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_weight}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[WEIGHT] kg</p>
@@ -268,7 +256,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Height</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_height}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[HEIGHT] cm</p>
@@ -278,7 +266,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Allergies</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_allergies}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[ALLERGIESTEXT]</p>
@@ -288,7 +276,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Support needed</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_support}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[SUPPORT]</p>
@@ -298,7 +286,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Contraindicative diseases</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_contra}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[EXCLUSION]</p>
@@ -310,7 +298,7 @@
         <!-- MEDICATION TABLE SECTION -->
         <tr>
           <td style="padding:0;">
-            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">Medication</h2>
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_medication}</h2>
             <table style="border-spacing:0;width: 100%; padding: 10px;">
               <th>
               </th>
@@ -342,11 +330,11 @@
         </tr>
         <tr>
           <td style="padding:0;">
-            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">Further Information</h2>
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_furtherinfo}</h2>
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Recommendation by</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_recommendation}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[RECOMMENDATIONTEXT]</p>
@@ -356,7 +344,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Given consent</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_consent}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[CONSENTTEXT]</p>
@@ -366,7 +354,7 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
-                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">Filled out date:</p>
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_filledout}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:12px;">
                   <p class="text" style="font-size:16px;margin:0;">[FILLEDOUTTIME]</p>
@@ -380,11 +368,8 @@
           <td style="padding:0;">
             <table style="border-spacing:0;">
               <p style="margin-left: 12px;">
-                <b> anything wrong or should be
-                    changed?<br/>
-                    Let us know via</b>
-                [email].
-                </p>
+                <b>{footer_change}</b>
+              </p>
             </table>
           </td>
         </tr>
