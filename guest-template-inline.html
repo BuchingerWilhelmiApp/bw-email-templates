@@ -1,2522 +1,380 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Email registration form</title>
-    <style>
-      .wrapper {
-        width: 100%;
-      }
-
-      #outlook a {
-        padding: 0;
-      }
-
-      body {
-        width: 100% !important;
-        min-width: 100%;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-        margin: 0;
-        margin: 0;
-        padding: 0;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-
-      .ExternalClass {
-        width: 100%;
-      }
-      .ExternalClass,
-      .ExternalClass p,
-      .ExternalClass span,
-      .ExternalClass font,
-      .ExternalClass td,
-      .ExternalClass div {
-        line-height: 100%;
-      }
-
-      #backgroundTable {
-        margin: 0;
-        margin: 0;
-        padding: 0;
-        width: 100% !important;
-        line-height: 100% !important;
-      }
-
-      img {
-        outline: none;
-        text-decoration: none;
-        -ms-interpolation-mode: bicubic;
-        width: auto;
-        max-width: 100%;
-        clear: both;
-        display: block;
-      }
-
-      center {
-        width: 100%;
-        min-width: 580px;
-      }
-
-      a img {
-        border: none;
-      }
-
-      p {
-        margin: 0 0 0 10px;
-        margin: 0 0 0 10px;
-      }
-
-      table {
-        border-spacing: 0;
-        border-collapse: collapse;
-      }
-
-      td {
-        word-wrap: break-word;
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        hyphens: auto;
-        border-collapse: collapse !important;
-      }
-
-      table,
-      tr,
-      td {
-        padding: 0;
-        vertical-align: top;
-        text-align: left;
-      }
-
-      @media only screen {
-        html {
-          min-height: 100%;
-          background: #f3f3f3;
-        }
-      }
-
-      table.body {
-        height: 100%;
-        width: 100%;
-      }
-
-      table.container {
-        background: #fefefe;
-        width: 580px;
-        margin: 0 auto;
-        margin: 0 auto;
-        text-align: inherit;
-      }
-
-      table.row {
-        padding: 0;
-        width: 100%;
-        position: relative;
-      }
-
-      table.spacer {
-        width: 100%;
-      }
-      table.spacer td {
-        mso-line-height-rule: exactly;
-      }
-
-      table.container table.row {
-        display: table;
-      }
-
-      td.columns,
-      td.column,
-      th.columns,
-      th.column {
-        margin: 0 auto;
-        margin: 0 auto;
-        padding-left: 16px;
-        padding-bottom: 16px;
-      }
-      td.columns .column,
-      td.columns .columns,
-      td.column .column,
-      td.column .columns,
-      th.columns .column,
-      th.columns .columns,
-      th.column .column,
-      th.column .columns {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-      td.columns .column center,
-      td.columns .columns center,
-      td.column .column center,
-      td.column .columns center,
-      th.columns .column center,
-      th.columns .columns center,
-      th.column .column center,
-      th.column .columns center {
-        min-width: none !important;
-      }
-
-      td.columns.last,
-      td.column.last,
-      th.columns.last,
-      th.column.last {
-        padding-right: 16px;
-      }
-
-      td.columns table:not(.button),
-      td.column table:not(.button),
-      th.columns table:not(.button),
-      th.column table:not(.button) {
-        width: 100%;
-      }
-
-      td.large-1,
-      th.large-1 {
-        width: 32.33333px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-1.first,
-      th.large-1.first {
-        padding-left: 16px;
-      }
-
-      td.large-1.last,
-      th.large-1.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-1,
-      .collapse > tbody > tr > th.large-1 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 48.33333px;
-      }
-
-      .collapse td.large-1.first,
-      .collapse th.large-1.first,
-      .collapse td.large-1.last,
-      .collapse th.large-1.last {
-        width: 56.33333px;
-      }
-
-      td.large-1 center,
-      th.large-1 center {
-        min-width: 0.33333px;
-      }
-
-      .body .columns td.large-1,
-      .body .column td.large-1,
-      .body .columns th.large-1,
-      .body .column th.large-1 {
-        width: 8.33333%;
-      }
-
-      td.large-2,
-      th.large-2 {
-        width: 80.66667px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-2.first,
-      th.large-2.first {
-        padding-left: 16px;
-      }
-
-      td.large-2.last,
-      th.large-2.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-2,
-      .collapse > tbody > tr > th.large-2 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 96.66667px;
-      }
-
-      .collapse td.large-2.first,
-      .collapse th.large-2.first,
-      .collapse td.large-2.last,
-      .collapse th.large-2.last {
-        width: 104.66667px;
-      }
-
-      td.large-2 center,
-      th.large-2 center {
-        min-width: 48.66667px;
-      }
-
-      .body .columns td.large-2,
-      .body .column td.large-2,
-      .body .columns th.large-2,
-      .body .column th.large-2 {
-        width: 16.66667%;
-      }
-
-      td.large-3,
-      th.large-3 {
-        width: 129px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-3.first,
-      th.large-3.first {
-        padding-left: 16px;
-      }
-
-      td.large-3.last,
-      th.large-3.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-3,
-      .collapse > tbody > tr > th.large-3 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 145px;
-      }
-
-      .collapse td.large-3.first,
-      .collapse th.large-3.first,
-      .collapse td.large-3.last,
-      .collapse th.large-3.last {
-        width: 153px;
-      }
-
-      td.large-3 center,
-      th.large-3 center {
-        min-width: 97px;
-      }
-
-      .body .columns td.large-3,
-      .body .column td.large-3,
-      .body .columns th.large-3,
-      .body .column th.large-3 {
-        width: 25%;
-      }
-
-      td.large-4,
-      th.large-4 {
-        width: 177.33333px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-4.first,
-      th.large-4.first {
-        padding-left: 16px;
-      }
-
-      td.large-4.last,
-      th.large-4.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-4,
-      .collapse > tbody > tr > th.large-4 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 193.33333px;
-      }
-
-      .collapse td.large-4.first,
-      .collapse th.large-4.first,
-      .collapse td.large-4.last,
-      .collapse th.large-4.last {
-        width: 201.33333px;
-      }
-
-      td.large-4 center,
-      th.large-4 center {
-        min-width: 145.33333px;
-      }
-
-      .body .columns td.large-4,
-      .body .column td.large-4,
-      .body .columns th.large-4,
-      .body .column th.large-4 {
-        width: 33.33333%;
-      }
-
-      td.large-5,
-      th.large-5 {
-        width: 225.66667px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-5.first,
-      th.large-5.first {
-        padding-left: 16px;
-      }
-
-      td.large-5.last,
-      th.large-5.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-5,
-      .collapse > tbody > tr > th.large-5 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 241.66667px;
-      }
-
-      .collapse td.large-5.first,
-      .collapse th.large-5.first,
-      .collapse td.large-5.last,
-      .collapse th.large-5.last {
-        width: 249.66667px;
-      }
-
-      td.large-5 center,
-      th.large-5 center {
-        min-width: 193.66667px;
-      }
-
-      .body .columns td.large-5,
-      .body .column td.large-5,
-      .body .columns th.large-5,
-      .body .column th.large-5 {
-        width: 41.66667%;
-      }
-
-      td.large-6,
-      th.large-6 {
-        width: 274px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-6.first,
-      th.large-6.first {
-        padding-left: 16px;
-      }
-
-      td.large-6.last,
-      th.large-6.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-6,
-      .collapse > tbody > tr > th.large-6 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 290px;
-      }
-
-      .collapse td.large-6.first,
-      .collapse th.large-6.first,
-      .collapse td.large-6.last,
-      .collapse th.large-6.last {
-        width: 298px;
-      }
-
-      td.large-6 center,
-      th.large-6 center {
-        min-width: 242px;
-      }
-
-      .body .columns td.large-6,
-      .body .column td.large-6,
-      .body .columns th.large-6,
-      .body .column th.large-6 {
-        width: 50%;
-      }
-
-      td.large-7,
-      th.large-7 {
-        width: 322.33333px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-7.first,
-      th.large-7.first {
-        padding-left: 16px;
-      }
-
-      td.large-7.last,
-      th.large-7.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-7,
-      .collapse > tbody > tr > th.large-7 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 338.33333px;
-      }
-
-      .collapse td.large-7.first,
-      .collapse th.large-7.first,
-      .collapse td.large-7.last,
-      .collapse th.large-7.last {
-        width: 346.33333px;
-      }
-
-      td.large-7 center,
-      th.large-7 center {
-        min-width: 290.33333px;
-      }
-
-      .body .columns td.large-7,
-      .body .column td.large-7,
-      .body .columns th.large-7,
-      .body .column th.large-7 {
-        width: 58.33333%;
-      }
-
-      td.large-8,
-      th.large-8 {
-        width: 370.66667px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-8.first,
-      th.large-8.first {
-        padding-left: 16px;
-      }
-
-      td.large-8.last,
-      th.large-8.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-8,
-      .collapse > tbody > tr > th.large-8 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 386.66667px;
-      }
-
-      .collapse td.large-8.first,
-      .collapse th.large-8.first,
-      .collapse td.large-8.last,
-      .collapse th.large-8.last {
-        width: 394.66667px;
-      }
-
-      td.large-8 center,
-      th.large-8 center {
-        min-width: 338.66667px;
-      }
-
-      .body .columns td.large-8,
-      .body .column td.large-8,
-      .body .columns th.large-8,
-      .body .column th.large-8 {
-        width: 66.66667%;
-      }
-
-      td.large-9,
-      th.large-9 {
-        width: 419px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-9.first,
-      th.large-9.first {
-        padding-left: 16px;
-      }
-
-      td.large-9.last,
-      th.large-9.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-9,
-      .collapse > tbody > tr > th.large-9 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 435px;
-      }
-
-      .collapse td.large-9.first,
-      .collapse th.large-9.first,
-      .collapse td.large-9.last,
-      .collapse th.large-9.last {
-        width: 443px;
-      }
-
-      td.large-9 center,
-      th.large-9 center {
-        min-width: 387px;
-      }
-
-      .body .columns td.large-9,
-      .body .column td.large-9,
-      .body .columns th.large-9,
-      .body .column th.large-9 {
-        width: 75%;
-      }
-
-      td.large-10,
-      th.large-10 {
-        width: 467.33333px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-10.first,
-      th.large-10.first {
-        padding-left: 16px;
-      }
-
-      td.large-10.last,
-      th.large-10.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-10,
-      .collapse > tbody > tr > th.large-10 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 483.33333px;
-      }
-
-      .collapse td.large-10.first,
-      .collapse th.large-10.first,
-      .collapse td.large-10.last,
-      .collapse th.large-10.last {
-        width: 491.33333px;
-      }
-
-      td.large-10 center,
-      th.large-10 center {
-        min-width: 435.33333px;
-      }
-
-      .body .columns td.large-10,
-      .body .column td.large-10,
-      .body .columns th.large-10,
-      .body .column th.large-10 {
-        width: 83.33333%;
-      }
-
-      td.large-11,
-      th.large-11 {
-        width: 515.66667px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-11.first,
-      th.large-11.first {
-        padding-left: 16px;
-      }
-
-      td.large-11.last,
-      th.large-11.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-11,
-      .collapse > tbody > tr > th.large-11 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 531.66667px;
-      }
-
-      .collapse td.large-11.first,
-      .collapse th.large-11.first,
-      .collapse td.large-11.last,
-      .collapse th.large-11.last {
-        width: 539.66667px;
-      }
-
-      td.large-11 center,
-      th.large-11 center {
-        min-width: 483.66667px;
-      }
-
-      .body .columns td.large-11,
-      .body .column td.large-11,
-      .body .columns th.large-11,
-      .body .column th.large-11 {
-        width: 91.66667%;
-      }
-
-      td.large-12,
-      th.large-12 {
-        width: 564px;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-
-      td.large-12.first,
-      th.large-12.first {
-        padding-left: 16px;
-      }
-
-      td.large-12.last,
-      th.large-12.last {
-        padding-right: 16px;
-      }
-
-      .collapse > tbody > tr > td.large-12,
-      .collapse > tbody > tr > th.large-12 {
-        padding-right: 0;
-        padding-left: 0;
-        width: 580px;
-      }
-
-      .collapse td.large-12.first,
-      .collapse th.large-12.first,
-      .collapse td.large-12.last,
-      .collapse th.large-12.last {
-        width: 588px;
-      }
-
-      td.large-12 center,
-      th.large-12 center {
-        min-width: 532px;
-      }
-
-      .body .columns td.large-12,
-      .body .column td.large-12,
-      .body .columns th.large-12,
-      .body .column th.large-12 {
-        width: 100%;
-      }
-
-      td.large-offset-1,
-      td.large-offset-1.first,
-      td.large-offset-1.last,
-      th.large-offset-1,
-      th.large-offset-1.first,
-      th.large-offset-1.last {
-        padding-left: 64.33333px;
-      }
-
-      td.large-offset-2,
-      td.large-offset-2.first,
-      td.large-offset-2.last,
-      th.large-offset-2,
-      th.large-offset-2.first,
-      th.large-offset-2.last {
-        padding-left: 112.66667px;
-      }
-
-      td.large-offset-3,
-      td.large-offset-3.first,
-      td.large-offset-3.last,
-      th.large-offset-3,
-      th.large-offset-3.first,
-      th.large-offset-3.last {
-        padding-left: 161px;
-      }
-
-      td.large-offset-4,
-      td.large-offset-4.first,
-      td.large-offset-4.last,
-      th.large-offset-4,
-      th.large-offset-4.first,
-      th.large-offset-4.last {
-        padding-left: 209.33333px;
-      }
-
-      td.large-offset-5,
-      td.large-offset-5.first,
-      td.large-offset-5.last,
-      th.large-offset-5,
-      th.large-offset-5.first,
-      th.large-offset-5.last {
-        padding-left: 257.66667px;
-      }
-
-      td.large-offset-6,
-      td.large-offset-6.first,
-      td.large-offset-6.last,
-      th.large-offset-6,
-      th.large-offset-6.first,
-      th.large-offset-6.last {
-        padding-left: 306px;
-      }
-
-      td.large-offset-7,
-      td.large-offset-7.first,
-      td.large-offset-7.last,
-      th.large-offset-7,
-      th.large-offset-7.first,
-      th.large-offset-7.last {
-        padding-left: 354.33333px;
-      }
-
-      td.large-offset-8,
-      td.large-offset-8.first,
-      td.large-offset-8.last,
-      th.large-offset-8,
-      th.large-offset-8.first,
-      th.large-offset-8.last {
-        padding-left: 402.66667px;
-      }
-
-      td.large-offset-9,
-      td.large-offset-9.first,
-      td.large-offset-9.last,
-      th.large-offset-9,
-      th.large-offset-9.first,
-      th.large-offset-9.last {
-        padding-left: 451px;
-      }
-
-      td.large-offset-10,
-      td.large-offset-10.first,
-      td.large-offset-10.last,
-      th.large-offset-10,
-      th.large-offset-10.first,
-      th.large-offset-10.last {
-        padding-left: 499.33333px;
-      }
-
-      td.large-offset-11,
-      td.large-offset-11.first,
-      td.large-offset-11.last,
-      th.large-offset-11,
-      th.large-offset-11.first,
-      th.large-offset-11.last {
-        padding-left: 547.66667px;
-      }
-
-      td.expander,
-      th.expander {
-        visibility: hidden;
-        width: 0;
-        padding: 0 !important;
-      }
-
-      table.container.radius {
-        border-radius: 0;
-        border-collapse: separate;
-      }
-
-      .block-grid {
-        width: 100%;
-        max-width: 580px;
-      }
-      .block-grid td {
-        display: inline-block;
-        padding: 8px;
-      }
-
-      .up-2 td {
-        width: 274px !important;
-      }
-
-      .up-3 td {
-        width: 177px !important;
-      }
-
-      .up-4 td {
-        width: 129px !important;
-      }
-
-      .up-5 td {
-        width: 100px !important;
-      }
-
-      .up-6 td {
-        width: 80px !important;
-      }
-
-      .up-7 td {
-        width: 66px !important;
-      }
-
-      .up-8 td {
-        width: 56px !important;
-      }
-
-      table.text-center,
-      th.text-center,
-      td.text-center,
-      h1.text-center,
-      h2.text-center,
-      h3.text-center,
-      h4.text-center,
-      h5.text-center,
-      h6.text-center,
-      p.text-center,
-      span.text-center {
-        text-align: center;
-      }
-
-      table.text-left,
-      th.text-left,
-      td.text-left,
-      h1.text-left,
-      h2.text-left,
-      h3.text-left,
-      h4.text-left,
-      h5.text-left,
-      h6.text-left,
-      p.text-left,
-      span.text-left {
-        text-align: left;
-      }
-
-      table.text-right,
-      th.text-right,
-      td.text-right,
-      h1.text-right,
-      h2.text-right,
-      h3.text-right,
-      h4.text-right,
-      h5.text-right,
-      h6.text-right,
-      p.text-right,
-      span.text-right {
-        text-align: right;
-      }
-
-      span.text-center {
-        display: block;
-        width: 100%;
-        text-align: center;
-      }
-
-      @media only screen and (max-width: 596px) {
-        .small-float-center {
-          margin: 0 auto !important;
-          float: none !important;
-          text-align: center !important;
-        }
-        .small-text-center {
-          text-align: center !important;
-        }
-        .small-text-left {
-          text-align: left !important;
-        }
-        .small-text-right {
-          text-align: right !important;
-        }
-      }
-
-      img.float-left {
-        float: left;
-        text-align: left;
-      }
-
-      img.float-right {
-        float: right;
-        text-align: right;
-      }
-
-      img.float-center,
-      img.text-center {
-        margin: 0 auto;
-        margin: 0 auto;
-        float: none;
-        text-align: center;
-      }
-
-      table.float-center,
-      td.float-center,
-      th.float-center {
-        margin: 0 auto;
-        margin: 0 auto;
-        float: none;
-        text-align: center;
-      }
-
-      .hide-for-large {
-        display: none !important;
-        mso-hide: all;
-        overflow: hidden;
-        max-height: 0;
-        font-size: 0;
-        width: 0;
-        line-height: 0;
-      }
-      @media only screen and (max-width: 596px) {
-        .hide-for-large {
-          display: block !important;
-          width: auto !important;
-          overflow: visible !important;
-          max-height: none !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-      }
-
-      table.body table.container .hide-for-large * {
-        mso-hide: all;
-      }
-
-      @media only screen and (max-width: 596px) {
-        table.body table.container .hide-for-large,
-        table.body table.container .row.hide-for-large {
-          display: table !important;
-          width: 100% !important;
-        }
-      }
-
-      @media only screen and (max-width: 596px) {
-        table.body table.container .callout-inner.hide-for-large {
-          display: table-cell !important;
-          width: 100% !important;
-        }
-      }
-
-      @media only screen and (max-width: 596px) {
-        table.body table.container .show-for-large {
-          display: none !important;
-          width: 0;
-          mso-hide: all;
-          overflow: hidden;
-        }
-      }
-
-      body,
-      table.body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      td,
-      th,
-      a {
-        color: #0a0a0a;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: normal;
-        padding: 0;
-        margin: 0;
-        margin: 0;
-        text-align: left;
-        line-height: 1.3;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: inherit;
-        word-wrap: normal;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: normal;
-        margin-bottom: 10px;
-        margin-bottom: 10px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      h2 {
-        font-size: 30px;
-      }
-
-      h3 {
-        font-size: 28px;
-      }
-
-      h4 {
-        font-size: 24px;
-      }
-
-      h5 {
-        font-size: 20px;
-      }
-
-      h6 {
-        font-size: 18px;
-      }
-
-      body,
-      table.body,
-      p,
-      td,
-      th {
-        font-size: 16px;
-        line-height: 1.3;
-      }
-
-      p {
-        margin-bottom: 10px;
-        margin-bottom: 10px;
-      }
-      p.lead {
-        font-size: 20px;
-        line-height: 1.6;
-      }
-
-      p.subheader {
-        margin-top: 4px;
-        margin-bottom: 8px;
-        margin-top: 4px;
-        margin-bottom: 8px;
-        font-weight: normal;
-        line-height: 1.4;
-        color: #8a8a8a;
-      }
-
-      small {
-        font-size: 80%;
-        color: #cacaca;
-      }
-
-      a {
-        color: #2199e8;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #147dc2;
-      }
-      a:active {
-        color: #147dc2;
-      }
-      a:visited {
-        color: #2199e8;
-      }
-
-      h1 a,
-      h1 a:visited,
-      h2 a,
-      h2 a:visited,
-      h3 a,
-      h3 a:visited,
-      h4 a,
-      h4 a:visited,
-      h5 a,
-      h5 a:visited,
-      h6 a,
-      h6 a:visited {
-        color: #2199e8;
-      }
-
-      pre {
-        background: #f3f3f3;
-        margin: 30px 0;
-        margin: 30px 0;
-      }
-      pre code {
-        color: #cacaca;
-      }
-      pre code span.callout {
-        color: #8a8a8a;
-        font-weight: bold;
-      }
-      pre code span.callout-strong {
-        color: #ff6908;
-        font-weight: bold;
-      }
-
-      table.hr {
-        width: 100%;
-      }
-      table.hr th {
-        height: 0;
-        max-width: 580px;
-        border-top: 0;
-        border-right: 0;
-        border-bottom: 1px solid #0a0a0a;
-        border-left: 0;
-        margin: 20px auto;
-        margin: 20px auto;
-        clear: both;
-      }
-
-      .stat {
-        font-size: 40px;
-        line-height: 1;
-      }
-      p + .stat {
-        margin-top: -16px;
-        margin-top: -16px;
-      }
-
-      span.preheader {
-        display: none !important;
-        visibility: hidden;
-        mso-hide: all !important;
-        font-size: 1px;
-        color: #f3f3f3;
-        line-height: 1px;
-        max-height: 0px;
-        max-width: 0px;
-        opacity: 0;
-        overflow: hidden;
-      }
-
-      table.button {
-        width: auto;
-        margin: 0 0 16px 0;
-        margin: 0 0 16px 0;
-      }
-      table.button table td {
-        text-align: left;
-        color: #fefefe;
-        background: #2199e8;
-        border: 2px solid #2199e8;
-      }
-      table.button table td a {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fefefe;
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px 8px 16px;
-        border: 0 solid #2199e8;
-        border-radius: 3px;
-      }
-      table.button.radius table td {
-        border-radius: 3px;
-        border: none;
-      }
-      table.button.rounded table td {
-        border-radius: 500px;
-        border: none;
-      }
-
-      table.button:hover table tr td a,
-      table.button:active table tr td a,
-      table.button table tr td a:visited,
-      table.button.tiny:hover table tr td a,
-      table.button.tiny:active table tr td a,
-      table.button.tiny table tr td a:visited,
-      table.button.small:hover table tr td a,
-      table.button.small:active table tr td a,
-      table.button.small table tr td a:visited,
-      table.button.large:hover table tr td a,
-      table.button.large:active table tr td a,
-      table.button.large table tr td a:visited {
-        color: #fefefe;
-      }
-
-      table.button.tiny table td,
-      table.button.tiny table a {
-        padding: 4px 8px 4px 8px;
-      }
-
-      table.button.tiny table a {
-        font-size: 10px;
-        font-weight: normal;
-      }
-
-      table.button.small table td,
-      table.button.small table a {
-        padding: 5px 10px 5px 10px;
-        font-size: 12px;
-      }
-
-      table.button.large table a {
-        padding: 10px 20px 10px 20px;
-        font-size: 20px;
-      }
-
-      table.button.expand,
-      table.button.expanded {
-        width: 100% !important;
-      }
-      table.button.expand table,
-      table.button.expanded table {
-        width: 100%;
-      }
-      table.button.expand table a,
-      table.button.expanded table a {
-        text-align: center;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      table.button.expand center,
-      table.button.expanded center {
-        min-width: 0;
-      }
-
-      table.button:hover table td,
-      table.button:visited table td,
-      table.button:active table td {
-        background: #147dc2;
-        color: #fefefe;
-      }
-
-      table.button:hover table a,
-      table.button:visited table a,
-      table.button:active table a {
-        border: 0 solid #147dc2;
-      }
-
-      table.button.secondary table td {
-        background: #777777;
-        color: #fefefe;
-        border: 0px solid #777777;
-      }
-
-      table.button.secondary table a {
-        color: #fefefe;
-        border: 0 solid #777777;
-      }
-
-      table.button.secondary:hover table td {
-        background: #919191;
-        color: #fefefe;
-      }
-
-      table.button.secondary:hover table a {
-        border: 0 solid #919191;
-      }
-
-      table.button.secondary:hover table td a {
-        color: #fefefe;
-      }
-
-      table.button.secondary:active table td a {
-        color: #fefefe;
-      }
-
-      table.button.secondary table td a:visited {
-        color: #fefefe;
-      }
-
-      table.button.success table td {
-        background: #3adb76;
-        border: 0px solid #3adb76;
-      }
-
-      table.button.success table a {
-        border: 0 solid #3adb76;
-      }
-
-      table.button.success:hover table td {
-        background: #23bf5d;
-      }
-
-      table.button.success:hover table a {
-        border: 0 solid #23bf5d;
-      }
-
-      table.button.alert table td {
-        background: #ec5840;
-        border: 0px solid #ec5840;
-      }
-
-      table.button.alert table a {
-        border: 0 solid #ec5840;
-      }
-
-      table.button.alert:hover table td {
-        background: #e23317;
-      }
-
-      table.button.alert:hover table a {
-        border: 0 solid #e23317;
-      }
-
-      table.button.warning table td {
-        background: #ffae00;
-        border: 0px solid #ffae00;
-      }
-
-      table.button.warning table a {
-        border: 0px solid #ffae00;
-      }
-
-      table.button.warning:hover table td {
-        background: #cc8b00;
-      }
-
-      table.button.warning:hover table a {
-        border: 0px solid #cc8b00;
-      }
-
-      table.callout {
-        margin-bottom: 16px;
-        margin-bottom: 16px;
-      }
-
-      th.callout-inner {
-        width: 100%;
-        border: 1px solid #cbcbcb;
-        padding: 10px;
-        background: #fefefe;
-      }
-      th.callout-inner.primary {
-        background: #def0fc;
-        border: 1px solid #444444;
-        color: #0a0a0a;
-      }
-      th.callout-inner.secondary {
-        background: #ebebeb;
-        border: 1px solid #444444;
-        color: #0a0a0a;
-      }
-      th.callout-inner.success {
-        background: #e1faea;
-        border: 1px solid #1b9448;
-        color: #fefefe;
-      }
-      th.callout-inner.warning {
-        background: #fff3d9;
-        border: 1px solid #996800;
-        color: #fefefe;
-      }
-      th.callout-inner.alert {
-        background: #fce6e2;
-        border: 1px solid #b42912;
-        color: #fefefe;
-      }
-
-      .thumbnail {
-        border: solid 4px #fefefe;
-        box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-        display: inline-block;
-        line-height: 0;
-        max-width: 100%;
-        transition: box-shadow 200ms ease-out;
-        border-radius: 3px;
-        margin-bottom: 16px;
-      }
-      .thumbnail:hover,
-      .thumbnail:focus {
-        box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5);
-      }
-
-      table.menu {
-        width: 580px;
-      }
-      table.menu td.menu-item,
-      table.menu th.menu-item {
-        padding: 10px;
-        padding-right: 10px;
-      }
-      table.menu td.menu-item a,
-      table.menu th.menu-item a {
-        color: #2199e8;
-      }
-
-      table.menu.vertical td.menu-item,
-      table.menu.vertical th.menu-item {
-        padding: 10px;
-        padding-right: 0;
-        display: block;
-      }
-      table.menu.vertical td.menu-item a,
-      table.menu.vertical th.menu-item a {
-        width: 100%;
-      }
-
-      table.menu.vertical td.menu-item table.menu.vertical td.menu-item,
-      table.menu.vertical td.menu-item table.menu.vertical th.menu-item,
-      table.menu.vertical th.menu-item table.menu.vertical td.menu-item,
-      table.menu.vertical th.menu-item table.menu.vertical th.menu-item {
-        padding-left: 10px;
-      }
-
-      table.menu.text-center a {
-        text-align: center;
-      }
-
-      .menu[align="center"] {
-        width: auto !important;
-      }
-
-      body.outlook p {
-        display: inline !important;
-      }
-
-      @media only screen and (max-width: 596px) {
-        table.body img {
-          width: auto;
-          height: auto;
-        }
-        table.body center {
-          min-width: 0 !important;
-        }
-        table.body .container {
-          width: 95% !important;
-        }
-        table.body .columns,
-        table.body .column {
-          height: auto !important;
-          -moz-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          padding-left: 16px !important;
-          padding-right: 16px !important;
-        }
-        table.body .columns .column,
-        table.body .columns .columns,
-        table.body .column .column,
-        table.body .column .columns {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        }
-        table.body .collapse .columns,
-        table.body .collapse .column {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        }
-        td.small-1,
-        th.small-1 {
-          display: inline-block !important;
-          width: 8.33333% !important;
-        }
-        td.small-2,
-        th.small-2 {
-          display: inline-block !important;
-          width: 16.66667% !important;
-        }
-        td.small-3,
-        th.small-3 {
-          display: inline-block !important;
-          width: 25% !important;
-        }
-        td.small-4,
-        th.small-4 {
-          display: inline-block !important;
-          width: 33.33333% !important;
-        }
-        td.small-5,
-        th.small-5 {
-          display: inline-block !important;
-          width: 41.66667% !important;
-        }
-        td.small-6,
-        th.small-6 {
-          display: inline-block !important;
-          width: 50% !important;
-        }
-        td.small-7,
-        th.small-7 {
-          display: inline-block !important;
-          width: 58.33333% !important;
-        }
-        td.small-8,
-        th.small-8 {
-          display: inline-block !important;
-          width: 66.66667% !important;
-        }
-        td.small-9,
-        th.small-9 {
-          display: inline-block !important;
-          width: 75% !important;
-        }
-        td.small-10,
-        th.small-10 {
-          display: inline-block !important;
-          width: 83.33333% !important;
-        }
-        td.small-11,
-        th.small-11 {
-          display: inline-block !important;
-          width: 91.66667% !important;
-        }
-        td.small-12,
-        th.small-12 {
-          display: inline-block !important;
-          width: 100% !important;
-        }
-        .columns td.small-12,
-        .column td.small-12,
-        .columns th.small-12,
-        .column th.small-12 {
-          display: block !important;
-          width: 100% !important;
-        }
-        table.body td.small-offset-1,
-        table.body th.small-offset-1 {
-          margin-left: 8.33333% !important;
-          margin-left: 8.33333% !important;
-        }
-        table.body td.small-offset-2,
-        table.body th.small-offset-2 {
-          margin-left: 16.66667% !important;
-          margin-left: 16.66667% !important;
-        }
-        table.body td.small-offset-3,
-        table.body th.small-offset-3 {
-          margin-left: 25% !important;
-          margin-left: 25% !important;
-        }
-        table.body td.small-offset-4,
-        table.body th.small-offset-4 {
-          margin-left: 33.33333% !important;
-          margin-left: 33.33333% !important;
-        }
-        table.body td.small-offset-5,
-        table.body th.small-offset-5 {
-          margin-left: 41.66667% !important;
-          margin-left: 41.66667% !important;
-        }
-        table.body td.small-offset-6,
-        table.body th.small-offset-6 {
-          margin-left: 50% !important;
-          margin-left: 50% !important;
-        }
-        table.body td.small-offset-7,
-        table.body th.small-offset-7 {
-          margin-left: 58.33333% !important;
-          margin-left: 58.33333% !important;
-        }
-        table.body td.small-offset-8,
-        table.body th.small-offset-8 {
-          margin-left: 66.66667% !important;
-          margin-left: 66.66667% !important;
-        }
-        table.body td.small-offset-9,
-        table.body th.small-offset-9 {
-          margin-left: 75% !important;
-          margin-left: 75% !important;
-        }
-        table.body td.small-offset-10,
-        table.body th.small-offset-10 {
-          margin-left: 83.33333% !important;
-          margin-left: 83.33333% !important;
-        }
-        table.body td.small-offset-11,
-        table.body th.small-offset-11 {
-          margin-left: 91.66667% !important;
-          margin-left: 91.66667% !important;
-        }
-        table.body table.columns td.expander,
-        table.body table.columns th.expander {
-          display: none !important;
-        }
-        table.body .right-text-pad,
-        table.body .text-pad-right {
-          padding-left: 10px !important;
-        }
-        table.body .left-text-pad,
-        table.body .text-pad-left {
-          padding-right: 10px !important;
-        }
-        table.menu {
-          width: 100% !important;
-        }
-        table.menu td,
-        table.menu th {
-          width: auto !important;
-          display: inline-block !important;
-        }
-        table.menu.vertical td,
-        table.menu.vertical th,
-        table.menu.small-vertical td,
-        table.menu.small-vertical th {
-          display: block !important;
-        }
-        table.menu[align="center"] {
-          width: auto !important;
-        }
-        table.button.small-expand,
-        table.button.small-expanded {
-          width: 100% !important;
-        }
-        table.button.small-expand table,
-        table.button.small-expanded table {
-          width: 100%;
-        }
-        table.button.small-expand table a,
-        table.button.small-expanded table a {
-          text-align: center !important;
-          width: 100% !important;
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        }
-        table.button.small-expand center,
-        table.button.small-expanded center {
-          min-width: 0;
-        }
-      }
-      .intro-text {
-        margin: 20px 0;
-      }
-    </style>
-
-    <style>
-      .header {
-        background: #e5e5e5;
-      }
-
-      .header .columns {
-        padding-bottom: 0;
-      }
-
-      .header p {
-        color: #fff;
-        margin-bottom: 0;
-      }
-
-      .header .container {
-        background: #8a8a8a;
-      }
-
-      .wrapper.secondary {
-        background: #f3f3f3;
-      }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Email Template</title>
+    
   </head>
-
-  <body>
-    <!-- <style> -->
-    <table
-      class="body"
-      data-made-with-foundation=""
-      style="background: #e5e5e5; width: 100%"
-    >
-      <tr>
-        <td valign="top">
-          <center data-parsed="">
-            <table style="margin: 0; width: 100%; max-width: 580px; padding: 0">
+  <body style="margin:0;background-color:#cccccc;">
+    <center class="wrapper" style="width:100%;table-layout:fixed;background-color:#e5e5e5;padding-bottom:60px;">
+      <table class="main" width="100%" style="background-color:#ffffff;margin:0 auto;width:100%;max-width:600px;border-spacing:0;font-family:sans-serif;color:#171a1b;">
+        <!-- BANNER IMAGE -->
+        <tr>
+          <td style="padding:0;">
+            <a href="#"><img src="https://buchingerwilhelmiapp.github.io/bw-static-items/email/img/registration_h.png" alt="banner" border="0" width="600" style="border:0;max-width: 100%;"></a>
+          </td>
+        </tr>
+        <!-- GREETING -->
+        <tr style="background-color: #e5e5e5;">
+          <td style="padding:0;padding: 1rem;">
+            <p>{DEAR} [GENDERTITLE] [LASTNAME],</p>
+            <p>
+              {intro1}
+            </p>
+            <h1>
+              {header1}
+            </h1>
+            <p class="lead">
+              {intro2}
+            </p>
+            <p class="lead">
+              {WELCOME_AGAIN}
+            </p>
+          </td>
+        </tr>
+        <!-- TEST -->
+        <tr>
+          <td style="padding:0;">
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_information}</h2>
+            <table style="border-spacing:0;">
               <tr>
-                <td class="wrapper-inner">
-                  <table style="width: 100%">
-                    <tbody>
-                      <tr>
-                        <th>
-                          <table style="margin: 0; width: 100%">
-                            <img
-                              style="width: 100%"
-                              src="https://buchingerwilhelmiapp.github.io/bw-static-items/email/img/registration_h.png"
-                              />
-                          </table>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_name}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[FULLNAME]</p>
                 </td>
               </tr>
             </table>
-            <table class="spacer">
-              <tbody>
-                <tr>
-                  <td height="16px" style="font-size: 16px; line-height: 16px">
-                    &#xA0;
-                  </td>
-                </tr>
-              </tbody>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_gender}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[GENDER]</p>
+                </td>
+              </tr>
             </table>
-            <table
-              align="center"
-              class="container float-center"
-              style="max-width: 580px; width: 100%"
-            >
-              <tbody>
-                <tr class="intro-text" style="background-color: #e5e5e5">
-                  <td style="padding: 1rem 0">
-                    <p>Dear [GENDERTITLE] [LASTNAME],</p>
-                    <p>
-                      we have just received your registration for your stay from
-                      [ARRIVAL] to [DEPARTURE] at our clinic in [CLINIC].
-                    </p>
-                    <h1>
-                      Thank you very much for providing your information and
-                      your time.
-                    </h1>
-                    <p class="lead">
-                      Now we can perfectly prepare your stay. Enclosed you will
-                      find a summary of the data we have saved at our internal
-                      servers. Please let us know if any information changes or
-                      is incorrect.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table class="spacer">
-                      <tbody>
-                        <tr>
-                          <td
-                            height="16px"
-                            style="font-size: 16px; line-height: 16px"
-                          >
-                            &#xA0;
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table
-                      class="row"
-                      style="
-                        background-color: white;
-                        margin: 0;
-                        padding: 1rem;
-                        width: 100%;
-                      "
-                    >
-                      <tbody>
-                        <tr>
-                          <th class="small-12 large-12 columns first last">
-                            <table>
-                              <tr>
-                                <th>
-                                  <h5
-                                    style="font-weight: bold; text-align: left"
-                                  >
-                                    Contact Details
-                                  </h5>
-                                  <p style="text-align: left">
-                                    We’re happy to welcome you again in our
-                                    house.
-                                  </p>
-                                  <table>
-                                    <tr>
-                                      <td>
-                                        <table>
-                                          <tr
-                                            style="text-align: left; width: 50%"
-                                          >
-                                            <p
-                                              style="
-                                                font-size: 16px;
-                                                line-height: 1.6;
-                                                color: #5bb6d6;
-                                                width: 100%;
-                                                margin: 1.1rem 0;
-                                                font-weight: 600;
-                                                text-align: left;
-                                              "
-                                            >
-                                              Your personal Information
-                                            </p>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Name
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="
-                                                padding-left: 64.33333px;
-                                                text-align: left;
-                                              "
-                                            >
-                                              <p style="text-align: left">
-                                                [FULLNAME]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Gender
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="
-                                                padding-left: 64.33333px;
-                                                text-align: center;
-                                              "
-                                            >
-                                              <p style="text-align: left">
-                                                [GENDER]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Date of birth
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [BIRTHDAY]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Place of birth
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [BIRTHPLACE]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Job
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [JOB]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Nationality
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [NATIONALITY]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Language(s)
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [LANGUAGES]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Talk
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">[TALK]</p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              style="
-                                                text-align: left;
-                                                width: 50%;
-                                              "
-                                            >
-                                              <p
-                                                class="blue-lead"
-                                                style="
-                                                  font-size: 16px;
-                                                  line-height: 1.6;
-                                                  color: #5bb6d6;
-                                                  width: 100%;
-                                                  margin: 1.1rem 0;
-                                                  font-weight: 600;
-                                                  text-align: left;
-                                                "
-                                              >
-                                                Your Contact Information
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Email
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [EMAIL]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Address
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [FULLADDRESS]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Phone
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [PHONE]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Other Phone
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">[OTHERPHONE]</p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Fax
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">[FAX]</p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Emergency Contact
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [EMERGENCYCONTACT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              style="
-                                                text-align: left;
-                                                width: 50%;
-                                              "
-                                            >
-                                              <p
-                                                class="blue-lead"
-                                                style="
-                                                  font-size: 16px;
-                                                  line-height: 1.6;
-                                                  color: #5bb6d6;
-                                                  width: 100%;
-                                                  margin: 1.1rem 0;
-                                                  font-weight: 600;
-                                                  text-align: left;
-                                                "
-                                              >
-                                                Your Stay
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Reason for the stay
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [REASONTEXT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Arrival
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [ARRIVAL]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Departure
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [DEPARTURE]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Media
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [MEDIA]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Therapy Wish
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [THERAPY]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              style="
-                                                text-align: left;
-                                                width: 50%;
-                                              "
-                                            >
-                                              <p
-                                                class="blue-lead"
-                                                style="
-                                                  font-size: 16px;
-                                                  line-height: 1.6;
-                                                  color: #5bb6d6;
-                                                  width: 100%;
-                                                  margin: 1.1rem 0;
-                                                  font-weight: 600;
-                                                  text-align: left;
-                                                "
-                                              >
-                                                Your health Information
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Weight
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [WEIGHT] kg
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Height
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [HEIGHT] cm
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Allergies
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [ALLERGIESTEXT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Support needed
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [SUPPORT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Contraindicative diseases
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [EXCLUSION]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Medication
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [MEDICATIONTEXT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Covid test result
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [COVIDTEST]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Covid symptoms
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [COVIDSYMPTOMS]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              style="
-                                                text-align: left;
-                                                width: 50%;
-                                              "
-                                            >
-                                              <p
-                                                class="blue-lead"
-                                                style="
-                                                  font-size: 16px;
-                                                  line-height: 1.6;
-                                                  color: #5bb6d6;
-                                                  width: 100%;
-                                                  margin: 1.1rem 0;
-                                                  font-weight: 600;
-                                                  text-align: left;
-                                                "
-                                              >
-                                                Further Information
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Recommendation by
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [RECOMMENDATIONTEXT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Given consent
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [CONSENTTEXT]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <p style="text-align: left">
-                                                Filled out date:
-                                              </p>
-                                            </td>
-                                            <td
-                                              class="large-offset-1"
-                                              style="padding-left: 64.33333px"
-                                            >
-                                              <p style="text-align: left">
-                                                [FILLEDOUTTIME]
-                                              </p>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <table
-                                              class="wrapper secondary"
-                                              align="center"
-                                            >
-                                              <p
-                                                style="
-                                                  text-align: center;
-                                                  margin-top: 1rem;
-                                                "
-                                              >
-                                                Is anything wrong or should be
-                                                changed? Let us know via
-                                                [email].
-                                              </p>
-                                            </table>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </th>
-                                <th class="expander"></th>
-                              </tr>
-                            </table>
-                          </th>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="wrapper secondary" align="center">
-                      <tr>
-                        <td class="wrapper-inner">
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td
-                                  height="16px"
-                                  style="font-size: 16px; line-height: 16px"
-                                >
-                                  &#xA0;
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table class="row">
-                            <tbody>
-                              <tr>
-                                <th class="small-12 large-12 columns first">
-                                  <table>
-                                    <tr>
-                                      <th>
-                                        <p
-                                          style="
-                                            font-weight: bold;
-                                            text-align: center;
-                                            font-size: 11px;
-                                          "
-                                        >
-                                          Buchinger Wilhelmi Development &
-                                          Holding GmbH
-                                        </p>
-                                        <p
-                                          style="
-                                            font-weight: 200;
-                                            text-align: center;
-                                            font-size: 11px;
-                                          "
-                                        >
-                                          Wilhelm-Beck-Str. 27, 88662
-                                          Überlingen, Germany
-                                        </p>
-                                        <table
-                                          align="center"
-                                          class="menu vertical"
-                                        >
-                                          <tr>
-                                            <td>
-                                              <table class="wrapper secondary">
-                                                <th class="menu-item"></th>
-                                                <td style="display: flex">
-                                                  <a
-                                                    href="#"
-                                                    style="margin: 0 0.7rem"
-                                                  >
-                                                    <svg
-                                                      width="24"
-                                                      height="24"
-                                                      viewBox="0 0 24 24"
-                                                      fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                      <path
-                                                        fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
-                                                        fill="black"
-                                                      />
-                                                    </svg>
-                                                  </a>
-                                                  <a
-                                                    href="#"
-                                                    style="margin: 0 0.7rem"
-                                                  >
-                                                    <svg
-                                                      width="24"
-                                                      height="24"
-                                                      viewBox="0 0 24 24"
-                                                      fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                      <path
-                                                        fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M7.465 1.066C8.638 1.012 9.012 1 12 1C14.988 1 15.362 1.013 16.534 1.066C17.706 1.119 18.506 1.306 19.206 1.577C19.939 1.854 20.604 2.287 21.154 2.847C21.714 3.396 22.146 4.06 22.422 4.794C22.694 5.494 22.88 6.294 22.934 7.464C22.988 8.639 23 9.013 23 12C23 14.988 22.987 15.362 22.934 16.535C22.881 17.705 22.694 18.505 22.422 19.205C22.146 19.9391 21.7133 20.6042 21.154 21.154C20.604 21.714 19.939 22.146 19.206 22.422C18.506 22.694 17.706 22.88 16.536 22.934C15.362 22.988 14.988 23 12 23C9.012 23 8.638 22.987 7.465 22.934C6.295 22.881 5.495 22.694 4.795 22.422C4.06092 22.146 3.39582 21.7133 2.846 21.154C2.28638 20.6047 1.85331 19.9399 1.577 19.206C1.306 18.506 1.12 17.706 1.066 16.536C1.012 15.361 1 14.987 1 12C1 9.012 1.013 8.638 1.066 7.466C1.119 6.294 1.306 5.494 1.577 4.794C1.85372 4.06008 2.28712 3.39531 2.847 2.846C3.39604 2.2865 4.06047 1.85344 4.794 1.577C5.494 1.306 6.294 1.12 7.464 1.066H7.465ZM16.445 3.046C15.285 2.993 14.937 2.982 12 2.982C9.063 2.982 8.715 2.993 7.555 3.046C6.482 3.095 5.9 3.274 5.512 3.425C4.999 3.625 4.632 3.862 4.247 4.247C3.88205 4.60205 3.60118 5.03428 3.425 5.512C3.274 5.9 3.095 6.482 3.046 7.555C2.993 8.715 2.982 9.063 2.982 12C2.982 14.937 2.993 15.285 3.046 16.445C3.095 17.518 3.274 18.1 3.425 18.488C3.601 18.965 3.882 19.398 4.247 19.753C4.602 20.118 5.035 20.399 5.512 20.575C5.9 20.726 6.482 20.905 7.555 20.954C8.715 21.007 9.062 21.018 12 21.018C14.938 21.018 15.285 21.007 16.445 20.954C17.518 20.905 18.1 20.726 18.488 20.575C19.001 20.375 19.368 20.138 19.753 19.753C20.118 19.398 20.399 18.965 20.575 18.488C20.726 18.1 20.905 17.518 20.954 16.445C21.007 15.285 21.018 14.937 21.018 12C21.018 9.063 21.007 8.715 20.954 7.555C20.905 6.482 20.726 5.9 20.575 5.512C20.375 4.999 20.138 4.632 19.753 4.247C19.3979 3.88207 18.9657 3.60121 18.488 3.425C18.1 3.274 17.518 3.095 16.445 3.046V3.046ZM10.595 15.391C11.3797 15.7176 12.2534 15.7617 13.0669 15.5157C13.8805 15.2697 14.5834 14.7489 15.0556 14.0422C15.5278 13.3356 15.7401 12.4869 15.656 11.6411C15.572 10.7953 15.197 10.005 14.595 9.405C14.2112 9.02148 13.7472 8.72781 13.2363 8.54515C12.7255 8.36248 12.1804 8.29536 11.6405 8.34862C11.1006 8.40187 10.5792 8.57418 10.1138 8.85313C9.64846 9.13208 9.25074 9.51074 8.9493 9.96185C8.64786 10.413 8.45019 10.9253 8.37052 11.462C8.29084 11.9986 8.33115 12.5463 8.48854 13.0655C8.64593 13.5847 8.91648 14.0626 9.28072 14.4647C9.64496 14.8668 10.0938 15.1832 10.595 15.391ZM8.002 8.002C8.52702 7.47698 9.15032 7.0605 9.8363 6.77636C10.5223 6.49222 11.2575 6.34597 12 6.34597C12.7425 6.34597 13.4777 6.49222 14.1637 6.77636C14.8497 7.0605 15.473 7.47698 15.998 8.002C16.523 8.52702 16.9395 9.15032 17.2236 9.8363C17.5078 10.5223 17.654 11.2575 17.654 12C17.654 12.7425 17.5078 13.4777 17.2236 14.1637C16.9395 14.8497 16.523 15.473 15.998 15.998C14.9377 17.0583 13.4995 17.654 12 17.654C10.5005 17.654 9.06234 17.0583 8.002 15.998C6.94166 14.9377 6.34597 13.4995 6.34597 12C6.34597 10.5005 6.94166 9.06234 8.002 8.002V8.002ZM18.908 7.188C19.0381 7.06527 19.1423 6.91768 19.2143 6.75397C19.2863 6.59027 19.3248 6.41377 19.3274 6.23493C19.33 6.05609 19.2967 5.87855 19.2295 5.71281C19.1622 5.54707 19.0624 5.39651 18.936 5.27004C18.8095 5.14357 18.6589 5.04376 18.4932 4.97652C18.3275 4.90928 18.1499 4.87598 17.9711 4.87858C17.7922 4.88119 17.6157 4.91965 17.452 4.9917C17.2883 5.06374 17.1407 5.1679 17.018 5.298C16.7793 5.55103 16.6486 5.88712 16.6537 6.23493C16.6588 6.58274 16.7992 6.91488 17.0452 7.16084C17.2911 7.40681 17.6233 7.54723 17.9711 7.5523C18.3189 7.55737 18.655 7.42669 18.908 7.188V7.188Z"
-                                                        fill="black"
-                                                      />
-                                                    </svg>
-                                                  </a>
-                                                  <a
-                                                    href="#"
-                                                    style="margin: 0 0.7rem"
-                                                  >
-                                                    <svg
-                                                      width="24"
-                                                      height="24"
-                                                      viewBox="0 0 24 24"
-                                                      fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                      <g
-                                                        clip-path="url(#clip0)"
-                                                      >
-                                                        <path
-                                                          d="M23.5 6.507C23.3641 6.02223 23.0994 5.58335 22.734 5.237C22.3583 4.88 21.8978 4.62464 21.396 4.495C19.518 4 11.994 4 11.994 4C8.85733 3.96431 5.72143 4.12127 2.604 4.47C2.10219 4.60921 1.64256 4.87029 1.266 5.23C0.895999 5.586 0.627999 6.025 0.487999 6.506C0.151692 8.31774 -0.0117088 10.1573 -7.97736e-07 12C-0.0120008 13.841 0.150999 15.68 0.487999 17.494C0.624999 17.973 0.891999 18.41 1.263 18.763C1.634 19.116 2.096 19.371 2.604 19.506C4.507 20 11.994 20 11.994 20C15.1347 20.0357 18.2746 19.8788 21.396 19.53C21.8978 19.4004 22.3583 19.145 22.734 18.788C23.104 18.435 23.367 17.996 23.499 17.518C23.8441 15.707 24.0119 13.8666 24 12.023C24.026 10.1716 23.8584 8.32256 23.5 6.506V6.507ZM9.602 15.424V8.577L15.862 12.001L9.602 15.424Z"
-                                                          fill="black"
-                                                        />
-                                                      </g>
-                                                      <defs>
-                                                        <clipPath id="clip0">
-                                                          <rect
-                                                            width="24"
-                                                            height="24"
-                                                            fill="white"
-                                                          />
-                                                        </clipPath>
-                                                      </defs>
-                                                    </svg>
-                                                  </a>
-                                                  <a
-                                                    href="#"
-                                                    style="margin: 0 0.7rem"
-                                                  >
-                                                    <svg
-                                                      width="24"
-                                                      height="24"
-                                                      viewBox="0 0 24 24"
-                                                      fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                      <path
-                                                        fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M1 2.838C1 2.35053 1.19365 1.88303 1.53834 1.53834C1.88303 1.19365 2.35053 1 2.838 1H21.16C21.4016 0.999605 21.6409 1.04686 21.8641 1.13907C22.0874 1.23127 22.2903 1.36661 22.4612 1.53734C22.6322 1.70806 22.7677 1.91082 22.8602 2.13401C22.9526 2.3572 23.0001 2.59642 23 2.838V21.16C23.0003 21.4016 22.9529 21.6409 22.8606 21.8642C22.7683 22.0875 22.6328 22.2904 22.462 22.4613C22.2912 22.6322 22.0884 22.7678 21.8651 22.8602C21.6419 22.9526 21.4026 23.0001 21.161 23H2.838C2.59655 23 2.35746 22.9524 2.1344 22.86C1.91134 22.7676 1.70867 22.6321 1.53798 22.4613C1.3673 22.2905 1.23193 22.0878 1.13962 21.8647C1.04731 21.6416 0.999869 21.4025 1 21.161V2.838ZM9.708 9.388H12.687V10.884C13.117 10.024 14.217 9.25 15.87 9.25C19.039 9.25 19.79 10.963 19.79 14.106V19.928H16.583V14.822C16.583 13.032 16.153 12.022 15.061 12.022C13.546 12.022 12.916 13.111 12.916 14.822V19.928H9.708V9.388ZM4.208 19.791H7.416V9.25H4.208V19.79V19.791ZM7.875 5.812C7.88105 6.08667 7.83217 6.35979 7.73124 6.61531C7.63031 6.87084 7.47935 7.10363 7.28723 7.30003C7.09511 7.49643 6.8657 7.65247 6.61246 7.75901C6.35921 7.86554 6.08724 7.92042 5.8125 7.92042C5.53776 7.92042 5.26579 7.86554 5.01255 7.75901C4.7593 7.65247 4.52989 7.49643 4.33777 7.30003C4.14565 7.10363 3.99469 6.87084 3.89376 6.61531C3.79283 6.35979 3.74395 6.08667 3.75 5.812C3.76187 5.27285 3.98439 4.75979 4.36989 4.38269C4.75539 4.00558 5.27322 3.79442 5.8125 3.79442C6.35178 3.79442 6.86961 4.00558 7.25512 4.38269C7.64062 4.75979 7.86313 5.27285 7.875 5.812V5.812Z"
-                                                        fill="black"
-                                                      />
-                                                    </svg>
-                                                  </a>
-                                                </td>
-                                              </table>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </th>
-                                    </tr>
-                                  </table>
-                                </th>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_birthday}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[BIRTHDAY]</p>
+                </td>
+              </tr>
             </table>
-          </center>
-        </td>
-      </tr>
-    </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_placeofbirth}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[BIRTHPLACE]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_job}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[JOB]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_nationality}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[NATIONALITY]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_languages}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[LANGUAGES]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_talk}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[TALK]</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;">
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_contactinfo}</h2>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_email}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[EMAIL]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_address}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[FULLADDRESS]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_phone}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[PHONE]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_otherphone}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[OTHERPHONE]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_fax}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[FAX]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_emergencycontact}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[EMERGENCYCONTACT]</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;">
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_yourstay}</h2>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_reason}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[REASONTEXT]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_arrival}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[ARRIVAL]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_departure}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[DEPARTURE]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_media}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[MEDIA]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_therapytype}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[THERAPY]</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;">
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_healthinfo}</h2>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_weight}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[WEIGHT] kg</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_height}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[HEIGHT] cm</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_allergies}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[ALLERGIESTEXT]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_support}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[SUPPORT]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_contra}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[EXCLUSION]</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- MEDICATION TABLE SECTION -->
+        <tr>
+          <td style="padding:0;">
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_medication}</h2>
+            <table style="border-spacing:0;width: 100%; padding: 10px;">
+              <th>
+              </th>
+              <tr>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">Type</td>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">Name</td>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">MO</td>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">NO</td>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">EV</td>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">NI</td>
+                <td style="padding:0;border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">Total</td>
+              </tr>
+              <tbody>
+                <!-- Justin insert med table
+                <tr>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">Immunmedikament</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">Immundepressiva</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">5</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">5</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">10</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">-</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; padding: 3px; border-collapse: collapse;">20 mg/IE</td>
+                </tr>
+                -->
+                [MEDTABLE]
+            </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0;">
+            <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:16px;font-weight:700;text-align:left;margin:0;margin:15px 0 15px 12px;">{heading_furtherinfo}</h2>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_recommendation}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[RECOMMENDATIONTEXT]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_consent}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[CONSENTTEXT]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text first" style="font-size:16px;margin:0;font-style:italic;">{info_filledout}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:12px;">
+                  <p class="text" style="font-size:16px;margin:0;">[FILLEDOUTTIME]</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- ADDITIONAL INFORMATION -->
+        <tr>
+          <td style="padding:0;">
+            <table style="border-spacing:0;">
+              <p style="margin-left: 12px;">
+                <b>{footer_change}</b>
+              </p>
+            </table>
+          </td>
+        </tr>
+        <!-- FOOTER SECTION -->
+      </table>
+    </center>
   </body>
 </html>
