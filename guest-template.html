@@ -8,7 +8,7 @@
     <style type="text/css">
     body {
         margin: 0;
-        background-color: #cccccc;
+        /* background-color: #cccccc; */
     }
 
     table {
@@ -26,7 +26,6 @@
     .wrapper {
         width: 100%;
         table-layout: fixed;
-        background-color: #e5e5e5;
         padding-bottom: 60px;
     }
 
@@ -55,7 +54,8 @@
 
     .data {
         width: 300px;
-        padding: 12px;
+        padding: 6px 12px;
+        vertical-align: top;
     }
 
     .text {
@@ -74,7 +74,7 @@
         font-weight: 700;
         text-align: left;
         margin: 0;
-        margin: 15px 0 15px 12px;
+        margin: 30px 0 30px 12px;
 }
     </style>
     </head>
@@ -95,9 +95,9 @@
 
     <!-- GREETING -->
 
-    <tr style="background-color: #e5e5e5;">
+    <tr>
         <td style="padding: 1rem">
-            <p>{DEAR} [GENDERTITLE] [LASTNAME],</p>
+            <p>{DEAR} [LASTNAME],</p>
             <p>
             {intro1}
             </p>
