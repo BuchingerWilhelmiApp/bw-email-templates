@@ -8,7 +8,6 @@
     <style type="text/css">
     body {
         margin: 0;
-        /* background-color: #cccccc; */
     }
 
     table {
@@ -26,7 +25,6 @@
     .wrapper {
         width: 100%;
         table-layout: fixed;
-        /* background-color: #e5e5e5; */
         padding-bottom: 60px;
     }
 
@@ -75,7 +73,11 @@
         text-align: left;
         margin: 0;
         margin: 15px 0 15px 12px;
-}
+    }
+
+    .section {
+        padding-top: 30px;
+    }
     </style>
     </head>
     <body>
@@ -96,7 +98,7 @@
     <!-- GREETING -->
 
     <tr>
-        <td style="padding: 1rem">
+        <td style="padding: 10px">
             <p>{DEAR} [GENDERTITLE] [LASTNAME],</p>
             <p>
             {intro1}
@@ -116,7 +118,7 @@
 
     <!-- TEST -->
     <tr>
-        <td>
+        <td class="section">
             <h2>{heading_information}</h2>
                 <table>
                     <tr>
@@ -201,7 +203,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="section">
                 <h2>{heading_contactinfo}</h2>
                 <table>
                     <tr>
@@ -266,7 +268,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="section">
                 <h2>{heading_yourstay}</h2>
                 <table>
                     <tr>
@@ -321,7 +323,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="section">
                 <h2>{heading_healthinfo}</h2>
                 <table>
                     <tr>
