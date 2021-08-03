@@ -111,8 +111,8 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <h1 style="font-family: sans-serif; font-size: 18px; font-weight: bold; margin: 0; margin-bottom: 45px;">Neue Anmeldung <span style="color: #EC6F6F">Besonderheiten</span></h1>
-                        <p>[FULLNAME], ([age] Jahre alt) möchte bei uns im Hause vom [arrivalDate] - [departureDate] [if ‘therapyType’ = fasten: “fasten”] [if ‘therapyType’ = ernerhrung: “das Ernährungs-Programm buchen”]. Bezüglich <span style="color: #EC6F6F;">folgender Besonderheit(en)</span> ist gegebenenfalls eine medizinische Abklärung vor dem Aufenthalt erforderlich:</p>
-                        <p>[BEHINDERUNGENLISTE]</p>
+                        <p>[FULLNAME], ([age] Jahre alt) möchte bei uns im Hause vom [arrivalDate] - [departureDate] das Programm [therapyType] buchen. Bezüglich <span style="color: #EC6F6F;">folgender Besonderheit(en)</span> ist gegebenenfalls eine medizinische Abklärung vor dem Aufenthalt erforderlich:</p>
+                        <p>[WHYSERIOUS]</p>
 
                         <!-- Patientendaten -->
 
@@ -152,7 +152,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; padding: 0px; margin: 0px; color: #EC6F6F">[birthDate], ([age] Jahre alt)</p>
+                                                [AGECOLOURED]
                                             </td>
                                         </tr>
                                     </table>
@@ -258,7 +258,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; color: #EC6F6F;">[weight] kg | [height] cm | BMI: [bmi]</p>
+                                                [STATURTEXTCOLOURED]
                                             </td>
                                         </tr>
                                     </table>
@@ -279,7 +279,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[ALLERGIESTEXT]</p>
+                                                <p style="font-size: 16px">[ALLERGIESFOODSTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -299,7 +299,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px;">[if 'disabilityMedAllergy' true: show 'disabilityMedAllergyDetail']</p>
+                                                <p style="font-size: 16px;">[MEDALLERGIESTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -319,7 +319,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; color: #EC6F6F;">[SUPPORTTEXT]</p>
+                                                [SUPPORTTEXTCOLOURED]
                                             </td>
                                         </tr>
                                     </table>
@@ -339,7 +339,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px; color: #EC6F6F;">[if 'disabilityHelp' true: show 'disabilityHelpDetail']</p>
+                                                [SUPPORTDAILYCOLOURED]
                                             </td>
                                         </tr>
                                     </table>
