@@ -261,7 +261,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>Körpermaße</p>
+                                                <p>Med.-Allergie</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -270,7 +270,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[height] cm | [weight] kg | <span style="color: rgb(58, 143, 58);">BMI [bmi]</span></p>
+                                                <p>[if 'disabilityMedAllergy' true: show 'disabilityMedAllergyDetail']</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -281,7 +281,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>Sprachen</p>
+                                                <p>Kontraindikation</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -290,7 +290,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[if 'languageGerman' true: “D”], [if 'languageEnglish' true: “EN”], [if 'languageFrench' true: “FR”], [if 'languageSpanish' true: “ES”], [language]</p>
+                                                <p style="color: #EC6F6F;">[exclusion]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -301,7 +301,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>Motivation</p>
+                                                <p>Allergien & Unv.</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -310,7 +310,132 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[reason] [+detail]</p>
+                                                <p>[if 'disabilityFood' true: show 'disabilityFoodDetail']</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td class="table-data first">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Behinderung</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="table-data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[if 'disabilityLocomotion' true: show 'disabilityLocomotionDetail']</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td class="table-data first">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Hilfe, Tagesablauf</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="table-data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[if 'disabilityHelp' true: show 'disabilityHelpDetail']</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- KONTAKT -->
+
+                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px;">KONTAKT</h2>
+
+                        <table>
+                            <tr >
+                                <td class="table-data first">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Email</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="table-data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[email]</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td class="table-data first">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Telefon</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="table-data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[contactPhone] | [contactOtherPhoneNumber]</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td class="table-data first">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Notfallkontakt</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="table-data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[emergencyContactName] | Telefon: [emergencyContactPhone]</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- SONSTIGES -->
+
+                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px;">SONSTIGES</h2>
+
+                        <table>
+                            <tr >
+                                <td class="table-data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[miscellaneous]</p>
                                             </td>
                                         </tr>
                                     </table>
