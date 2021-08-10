@@ -147,7 +147,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[arrivalDate] - [departureDate] | [if 'firstTime' true: “FT”] | [therapyType]</p>
+                                                <p>[arrivalDate] - [departureDate] | [FTTEXT] | [therapyType]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -167,7 +167,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[height] cm | [weight] kg | <span style="color: rgb(58, 143, 58);">BMI [bmi]</span></p>
+                                                [STATURTEXTCOLOURED]
                                             </td>
                                         </tr>
                                     </table>
@@ -187,7 +187,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[if 'languageGerman' true: “D”], [if 'languageEnglish' true: “EN”], [if 'languageFrench' true: “FR”], [if 'languageSpanish' true: “ES”], [language]</p>
+                                                <p>[LANGUAGES_CODED]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -207,7 +207,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[reason] [+detail]</p>
+                                                <p>[MOTIVATIONTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -270,7 +270,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[if 'disabilityMedAllergy' true: show 'disabilityMedAllergyDetail']</p>
+                                                <p>[MEDALLERGIESTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -290,7 +290,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="color: #EC6F6F;">[exclusion]</p>
+                                                [WHYSERIOUS]
                                             </td>
                                         </tr>
                                     </table>
@@ -310,7 +310,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[if 'disabilityFood' true: show 'disabilityFoodDetail']</p>
+                                                <p>[ALLERGIESFOODSTEXT]</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -330,7 +330,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[if 'disabilityLocomotion' true: show 'disabilityLocomotionDetail']</p>
+                                                [SUPPORTLOCOTEXTCOLOURED]
                                             </td>
                                         </tr>
                                     </table>
@@ -350,7 +350,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p>[if 'disabilityHelp' true: show 'disabilityHelpDetail']</p>
+                                                [SUPPORTDAILYCOLOURED]
                                             </td>
                                         </tr>
                                     </table>
