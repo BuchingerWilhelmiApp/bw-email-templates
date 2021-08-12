@@ -92,6 +92,52 @@
         border-color: #34495e !important;
       }
     }
+
+    /* custom styles */
+
+    .content {
+        font-family: sans-serif;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 45px;
+    }
+
+    h2 {
+        font-family: sans-serif;
+        color: #5BB6D6;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 50px 0 15px;
+    }
+
+    .table {
+        border-spacing: 0!important;
+    }
+
+    .data {
+        width: 350px;
+    }
+
+    .data.first {
+        vertical-align: top;
+    }
+
+    .data p {
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .data.first p {
+        font-style: italic;
+    }
     </style>
   </head>
   <body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
@@ -110,168 +156,168 @@
                 <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding-top: 60px; padding-left: 60px; padding-right: 60px; padding-bottom: 170px;">
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                     <tr>
-                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
-                        <h1 style="font-family: sans-serif; font-size: 18px; font-weight: bold; margin: 0; margin-bottom: 45px;">Neue Reservierung: [arrivalDate] - [depatureDate]</h1>
+                      <td class="content">
+                        <h1>Neue Reservierung: [arrivalDate] - [depatureDate]</h1>
 
                         <!-- Patienten Daten -->
 
-                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px;">Patientendaten</h2>
-                        <table style="border-spacing: 0!important;">
+                        <h2>Patientendaten</h2>
+                        <table class="table">
                             <tr">
-                                <td style="width: 350px; vertical-align: top;">
-                                    <table style="border-spacing: 0!important;">
-                                        <tr>
-                                            <td>
-                                                <p style="font-size: 16px; font-style: italic;">Name</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td style="width: 350px;">
+                                <td class="data first">
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[NAME]</p>
+                                                <p>Name</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[NAME]</p>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Vorname</p>
+                                              <p>Vorname</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[SURNAME]</p>
+                                              <p>[SURNAME]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Titel</p>
+                                              <p>Titel</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[TITLE]</p>
+                                              <p>[TITLE]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Geburtsdatum</p>
+                                              <p>Geburtsdatum</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[BIRTHDAY]</p>
+                                              <p>[BIRTHDAY]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Geburtsort</p>
+                                              <p>Geburtsort</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[BIRTHPLACE]</p>
+                                              <p>[BIRTHPLACE]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Geschlecht</p>
+                                              <p>Geschlecht</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[GENDER]</p>
+                                              <p>[GENDER]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Nationalität</p>
+                                              <p>Nationalität</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[NATIONALITY]</p>
+                                              <p>[NATIONALITY]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Sprache</p>
+                                              <p>Sprache</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[LANGUAGES]</p>
+                                              <p>[LANGUAGES]</p>
                                           </td>
                                       </tr>
                                   </table>
@@ -281,163 +327,163 @@
 
                         <!-- Hauptadresse und Kontaktdaten -->
 
-                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px; margin-top: 50px;">Hauptadresse und Kontaktdaten</h2>
-                        <table style="border-spacing: 0!important;">
+                        <h2>Hauptadresse und Kontaktdaten</h2>
+                        <table class="table">
                             <tr >
-                                <td style="width: 350px; vertical-align: top;">
-                                    <table style="border-spacing: 0!important;">
-                                        <tr>
-                                            <td>
-                                                <p style="font-size: 16px; font-style: italic;">Länderkennzeichen</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td style="width: 350px;">
+                                <td class="data first">
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="font-size: 16px">[adressCountry]</p>
+                                                <p>Länderkennzeichen</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="data">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>[adressCountry]</p>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Postleitzahl</p>
+                                              <p>Postleitzahl</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[adressPLZ]</p>
+                                              <p>[adressPLZ]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Ort</p>
+                                              <p>Ort</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[adressResidency]</p>
+                                              <p>[adressResidency]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Straße und Hausnummer</p>
+                                              <p>Straße und Hausnummer</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[adressStreet]</p>
+                                              <p>[adressStreet]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Festnetz</p>
+                                              <p>Festnetz</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[contactFestnetz]</p>
+                                              <p>[contactFestnetz]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Fax</p>
+                                              <p>Fax</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[contactFax]</p>
+                                              <p>[contactFax]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Mobilnummer</p>
+                                              <p>Mobilnummer</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[contactPhone]</p>
+                                              <p>[contactPhone]</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
                             </tr>
                             <tr>
-                              <td style="width: 350px; vertical-align: top;">
-                                  <table style="border-spacing: 0!important;">
+                              <td class="data first">
+                                  <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px; font-style: italic;">Email</p>
+                                              <p>Email</p>
                                           </td>
                                       </tr>
                                   </table>
                               </td>
-                              <td style="width: 350px;">
+                              <td class="data">
                                   <table>
                                       <tr>
                                           <td>
-                                              <p style="font-size: 16px">[email]</p>
+                                              <p>[email]</p>
                                           </td>
                                       </tr>
                                   </table>
@@ -447,64 +493,64 @@
 
                         <!-- Persönliche Angaben -->
 
-                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px; margin-top: 50px;">Persönliche Angaben</h2>
+                        <h2>Persönliche Angaben</h2>
 
-                        <table>
+                        <table class="table">
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Beruf</p>
+                                            <p>Beruf</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[job]</p>
+                                            <p>[job]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Behinderung</p>
+                                            <p>Behinderung</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[disabilityLocomotionDetail]</p>
+                                            <p>[disabilityLocomotionDetail]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Foto erlaubt</p>
+                                            <p>Foto erlaubt</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[PHOTO]</p>
+                                            <p>[PHOTO]</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -514,84 +560,84 @@
 
                         <!-- An- und Abreise -->
 
-                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px; margin-top: 50px;">An- und Abreise</h2>
+                        <h2>An- und Abreise</h2>
 
-                        <table>
+                        <table class="table">
                           <tr>
-                            <td style="width: 350px;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Ankunft</p>
+                                            <p>Ankunft</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[arrivalDate]</p>
+                                            <p>[arrivalDate]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Bemerkung Fallbezogen</p>
+                                            <p>Bemerkung Fallbezogen</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[zb. mediaTV]</p>
+                                            <p>[zb. mediaTV]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Abreise</p>
+                                            <p>Abreise</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[departureDate]</p>
+                                            <p>[departureDate]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Sonstiges</p>
+                                            <p>Sonstiges</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[miscellaneous]</p>
+                                            <p>[miscellaneous]</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -601,45 +647,45 @@
 
                         <!-- Strukturierte Patienteninfo -->
 
-                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px; margin-top: 50px;">Strukturierte Patienteninfo</h2>
+                        <h2>Strukturierte Patienteninfo</h2>
 
-                        <table>
+                        <table class="table">
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Medizinische Vorabinformation</p>
+                                            <p>Medizinische Vorabinformation</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
                                             <!-- Grund des Aufenthals | Größe | Gewicht | Allergien | Unverträglichkeiten  -->
-                                            <p style="font-size: 16px">[Med health Infos]</p>
+                                            <p>[Med health Infos]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Gästebetreuung</p>
+                                            <p>Gästebetreuung</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[choosenLanguage]</p>
+                                            <p>[choosenLanguage]</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -649,44 +695,44 @@
 
                         <!-- Marketing -->
 
-                        <h2 style="font-family: sans-serif; color: #5BB6D6; font-size: 16px; font-weight: 700; margin: 0; margin-bottom: 15px; margin-top: 50px;">Marketing</h2>
+                        <h2>Marketing</h2>
 
-                        <table>
+                        <table class="table">
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Aufmerksam durch</p>
+                                            <p>Aufmerksam durch</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[REFERRER_DE]</p>
+                                            <p>[REFERRER_DE]</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                           </tr>
                           <tr>
-                            <td style="width: 350px; vertical-align: top;">
-                                <table style="border-spacing: 0!important;">
+                            <td class="data first">
+                                <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px; font-style: italic;">Kommentar Empfehlung</p>
+                                            <p>Kommentar Empfehlung</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td style="width: 350px;">
+                            <td class="data">
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="font-size: 16px">[referrerDetail]</p>
+                                            <p>[referrerDetail]</p>
                                         </td>
                                     </tr>
                                 </table>
