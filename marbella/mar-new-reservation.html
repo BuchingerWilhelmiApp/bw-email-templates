@@ -158,7 +158,7 @@
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                     <tr>
                       <td class="content">
-                        <h1>Nueva reservación: [if 'firstTime' true: “FT”] [arrivalDate] - [departureDate]</h1>
+                        <h1>Nueva reservación: [FTTEXT] [arrivalDate] - [departureDate]</h1>
 
                         <!-- Datos generales -->
 
@@ -259,7 +259,7 @@
                                       <tr>
                                           <td>
                                               <p>
-                                                [if 'languageGerman' true: “German”], [if 'languageEnglish' true: “English”], [if 'languageFrench' true: “French”], [if 'languageSpanish' true: “Spanish”]
+                                                [LANGUAGES]
                                               </p>
                                           </td>
                                       </tr>
@@ -360,7 +360,7 @@
                                   <table>
                                       <tr>
                                           <td>
-                                              <p>[nationality]</p>
+                                              <p>[NATIONALITY]</p>
                                           </td>
                                       </tr>
                                   </table>
@@ -380,7 +380,7 @@
                                   <table>
                                       <tr>
                                           <td>
-                                              <p>[gender]</p>
+                                              <p>[GENDER]</p>
                                           </td>
                                       </tr>
                                   </table>
@@ -453,6 +453,7 @@
                               </td>
                             </tr>
                             <tr>
+                            <tr>
                               <td class="data first">
                                   <table>
                                       <tr>
@@ -507,7 +508,7 @@
                                       <tr>
                                           <td>
                                               <p>
-                                                Fax: [contactFax] | Contacto de emergencia: [emergencyContactName], [emergencyContactPhone]
+                                                [SEGUNDO_TELEFONO]
                                               </p>
                                           </td>
                                       </tr>
@@ -563,7 +564,7 @@
                                     <tr>
                                         <td>
                                             <p>
-                                              [if 'travellingByCar' true: “Ilega en coche”] [if 'shuttleRequested' true: “necesita un servicio de transporte”]
+                                                [OBSERVACIONES_FRONTOFFICE]
                                             </p>
                                         </td>
                                     </tr>
@@ -604,9 +605,7 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <p>
-                                              [if 'disabilityLocomotion' true: show 'disabilityLocomotionDetail'], [if 'disabilityHelp' true: show 'disabilityHelpDetail']
-                                            </p>
+                                            [SUPPORTLOCOTEXTCOLOURED]
                                         </td>
                                     </tr>
                                 </table>
@@ -627,7 +626,7 @@
                                     <tr>
                                         <td>
                                             <p>
-                                              [if 'disabilityFood' true: show 'disabilityFoodDetail']
+                                            [ALLERGIESFOODSTEXT]
                                             </p>
                                         </td>
                                     </tr>
@@ -648,9 +647,7 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <p>
-                                              [weight] kg | [height] cm
-                                            </p>
+                                            [STATURTEXTCOLOURED]
                                         </td>
                                     </tr>
                                 </table>
@@ -671,7 +668,7 @@
                                     <tr>
                                         <td>
                                             <p>
-                                              [if 'mediaTV' true: “Deseo de TV”]
+                                                [spanishTV]
                                             </p>
                                         </td>
                                     </tr>
@@ -766,7 +763,7 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <p>[if 'mediaTV' true: “Deseo de TV”]</p>
+                                            <p>[spanishTV]</p>
                                         </td>
                                     </tr>
                                 </table>
