@@ -109,15 +109,8 @@
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <h1 style="font-family:sans-serif;font-size:18px;font-weight:bold;margin:0;margin-bottom:45px;">Nueva aplicación con <span style="color: #EC6F6F">características especiales</span>
                         </h1>
-                        <p>Peter Pan, (17) quiere reservar el programa de ayuno en nuestra casa del [arrivalDate] - [departureDate]. En lo que respecta a las siguientes <span style="color: #EC6F6F;">condiciones especiales</span>, es posible que se requiera una aclaración médica antes de la estancia:</p>
-                        <li>Razones contrastables: ...</li>
-                        <li>El paciente tiene una discapacidad (para caminar). Razón: ...</li>
-                        <li>El paciente necesita ayuda con la rutina diaria. Razón: ...</li>
-                        <li>Peso superior a 120 kg: XXX kg</li>
-                        <li>IMC inferior a 20: ...</li>
-                        <li>El invitado necesita un intérprete.</li>
-                        <li>El paciente es menor de edad.</li>
-                        <li>El paciente está tomando más de 5 medicamentos.</li>
+                        <p>[FULLNAME], ([age]) quiere reservar el programa de ayuno en nuestra casa del [arrivalDate] - [departureDate]. En lo que respecta a las siguientes <span style="color: #EC6F6F;">condiciones especiales</span>, es posible que se requiera una aclaración médica antes de la estancia:</p>
+                        <p>[WHYSERIOUS]</p>
                         <!-- Datos personales -->
                         <h2 style="font-family:sans-serif;color:#5BB6D6;font-size:16px;font-weight:700;margin:50px 0 15px;">Datos personales</h2>
                         <table class="table" style="border-spacing:0 !important;">
@@ -155,8 +148,8 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;color: #EC6F6F;">[birthDateString], ([age] años)</p>
-                                  </td>
+                                    [AGECOLOURED]
+                                            </td>
                                 </tr>
                               </table>
                             </td>
@@ -175,7 +168,7 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;">[gender]</p>
+                                    <p style="font-size:16px;padding:0px;margin:0px;">[GENDER]</p>
                                   </td>
                                 </tr>
                               </table>
@@ -195,7 +188,7 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;">[if 'languageGerman' true: “Deutsch”], [if 'languageEnglish' true: “Englisch”], [if 'languageFrench' true: “Französisch”], [‘otherLanguage’], <span style="color:#EC6F6F;">[‘dolmetscher’]</span></p>
+                                    <p style="font-size:16px;padding:0px;margin:0px;">[spanishLanguagesOneLine]</p>
                                   </td>
                                 </tr>
                               </table>
@@ -219,7 +212,7 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;"><b>[therapyType]</b></p>
+                                    <p style="font-size:16px;padding:0px;margin:0px;"><b>[therapyType_ES]</b></p>
                                   </td>
                                 </tr>
                               </table>
@@ -239,8 +232,8 @@
                               <table>
                                 <tr>
                                   <td>
-                                    [if 'reasonPrevention' true: “Prevention”], [if 'reasonRegeneration' true: “Regeneration”], [if 'reasonWeight' true: “Weight reduction”], [if 'reasonSmoke' true: “Smoking cessation”], [if 'reasonAcute' true: show “Acute illness:” 'reasonAcuteDetail'],  [if 'reasonChronic' true: show “Chronic illness:” 'reasonChronicDetail'], [if 'reasonLocomotive' true: show “Diseases of the locomotor system:” 'reasonLocomotiveDetail'], [if 'reasonDigestive' true: show “Diseases of the digestive system:” 'reasonDigestiveDetail'],
-                                            </td>
+                                    <p style="font-size:16px;padding:0px;margin:0px;">[REASONTEXT_ES]</p>
+                                  </td>
                                 </tr>
                               </table>
                             </td>
@@ -259,8 +252,8 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;color:#EC6F6F;">[weight] kg | [height] cm | BMI: [bmi]</p>
-                                  </td>
+                                    [STATURTEXTCOLOURED]
+                                            </td>
                                 </tr>
                               </table>
                             </td>
@@ -280,8 +273,8 @@
                               <table>
                                 <tr>
                                   <td>
-                                    [if 'disabilityFood' true: show 'disabilityFoodDetail']
-                                            </td>
+                                    <p style="font-size:16px;padding:0px;margin:0px;">[ALLERGIESFOODSTEXT]</p>
+                                  </td>
                                 </tr>
                               </table>
                             </td>
@@ -299,7 +292,9 @@
                             <td class="data" style="width:350px;">
                               <table>
                                 <tr>
-                                  <td>[ALLERGIESMEDSTEXT]</td>
+                                  <td>
+                                    [ALLERGIESMEDSTEXT]
+                                            </td>
                                 </tr>
                               </table>
                             </td>
@@ -358,7 +353,7 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;">[EXCLUSIONTEXT_DE]</p>
+                                    <p style="font-size:16px;padding:0px;margin:0px;">[EXCLUSIONTEXT_ES]</p>
                                   </td>
                                 </tr>
                               </table>
@@ -480,7 +475,7 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <p style="font-size:16px;padding:0px;margin:0px;">[contactPhone]</p>
+                                    <p style="font-size:16px;padding:0px;margin:0px;">[contactOtherPhone]</p>
                                   </td>
                                 </tr>
                               </table>
