@@ -91,7 +91,7 @@
 
     <tr>
         <td style="padding: 10px">
-            <p class="lead">{DEAR} [GENDERTITLE] [firstName] [lastName],</p>
+            <p class="lead">{DEAR}  [firstName] [lastName],</p>
             <p class="lead">
             {intro1}
             </p>
@@ -185,10 +185,10 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">{info_talk}</p>
+                            <p class="text first">{info_translator}</p>
                         </td>
                         <td class="data">
-                            <p class="text">[TALKBOOL_GUEST]</p>
+                            <p class="text">[TRANSLATOR_BOOL]</p>
                         </td>
                     </tr>
                 </table>
@@ -262,13 +262,14 @@
         <tr>
             <td class="section">
                 <h2>{heading_yourstay}</h2>
+
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">{info_reason}</p>
+                            <p class="text first">{info_therapytype}</p>
                         </td>
                         <td class="data">
-                            <p class="text">[REASONTEXT_GUEST]</p>
+                            <p class="text">[therapyType_GUEST]</p>
                         </td>
                     </tr>
                 </table>
@@ -285,10 +286,41 @@
                 <table>
                     <tr>
                         <td class="data">
+                            <p class="text first">{info_arrival_time}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[expectedTimeOfArrival]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
                             <p class="text first">{info_departure}</p>
                         </td>
                         <td class="data">
                             <p class="text">[departureDate]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_travelbycar}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[travelByCarBool_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- shuttle required -->
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_shuttlerequired}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[shuttleRequiredBool_GUEST]</p>
                         </td>
                     </tr>
                 </table>
@@ -305,18 +337,39 @@
                 <table>
                     <tr>
                         <td class="data">
-                            <p class="text first">{info_therapytype}</p>
+                            <p class="text first">{info_talk}</p>
                         </td>
                         <td class="data">
-                            <p class="text">[therapyType_GUEST]</p>
+                            <p class="text">[TALKBOOL_GUEST] | [talkDetail]</p>
                         </td>
                     </tr>
                 </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_contact_therapyplanning}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[therapyPlanningBool_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+
             </td>
         </tr>
         <tr>
             <td class="section">
                 <h2>{heading_healthinfo}</h2>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_reason}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[REASONTEXT_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
                 <table>
                     <tr>
                         <td class="data">

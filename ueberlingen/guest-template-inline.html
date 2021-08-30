@@ -19,7 +19,7 @@
         <!-- GREETING -->
         <tr>
           <td style="padding:0;padding: 10px;">
-            <p class="lead" style="font-size:18px;line-height:170%;">{DEAR} [GENDERTITLE] [firstName] [lastName],</p>
+            <p class="lead" style="font-size:18px;line-height:170%;">{DEAR}  [firstName] [lastName],</p>
             <p class="lead" style="font-size:18px;line-height:170%;">
               {intro1}
             </p>
@@ -111,10 +111,10 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_talk}</p>
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_translator}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text" style="font-size:18px;margin:0;">[TALKBOOL_GUEST]</p>
+                  <p class="text" style="font-size:18px;margin:0;">[TRANSLATOR_BOOL]</p>
                 </td>
               </tr>
             </table>
@@ -129,7 +129,7 @@
                   <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_email}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text" style="font-size:18px;margin:0;"><a href="mailto:[email]">[email]</a></p>
+                  <p class="text" style="font-size:18px;margin:0;"><a href="mailto:%5Bemail%5D">[email]</a></p>
                 </td>
               </tr>
             </table>
@@ -191,10 +191,10 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_reason}</p>
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_therapytype}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text" style="font-size:18px;margin:0;">[REASONTEXT_GUEST]</p>
+                  <p class="text" style="font-size:18px;margin:0;">[therapyType_GUEST]</p>
                 </td>
               </tr>
             </table>
@@ -211,10 +211,41 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_arrival_time}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text" style="font-size:18px;margin:0;">[expectedTimeOfArrival]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
                   <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_departure}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
                   <p class="text" style="font-size:18px;margin:0;">[departureDate]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_travelbycar}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text" style="font-size:18px;margin:0;">[travelByCarBool_GUEST]</p>
+                </td>
+              </tr>
+            </table>
+            <!-- shuttle required -->
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_shuttlerequired}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text" style="font-size:18px;margin:0;">[shuttleRequiredBool_GUEST]</p>
                 </td>
               </tr>
             </table>
@@ -231,10 +262,20 @@
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_therapytype}</p>
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_talk}</p>
                 </td>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
-                  <p class="text" style="font-size:18px;margin:0;">[therapyType_GUEST]</p>
+                  <p class="text" style="font-size:18px;margin:0;">[TALKBOOL_GUEST] | [talkDetail]</p>
+                </td>
+              </tr>
+            </table>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_contact_therapyplanning}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text" style="font-size:18px;margin:0;">[therapyPlanningBool_GUEST]</p>
                 </td>
               </tr>
             </table>
@@ -243,6 +284,16 @@
         <tr>
           <td class="section" style="padding:0;padding-top:30px;">
             <h2 style="color:#5BB6D6;font-family:sans-serif;font-size:18px;font-weight:700;text-align:left;margin:30px 0 6px 0;">{heading_healthinfo}</h2>
+            <table style="border-spacing:0;">
+              <tr>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text first" style="font-size:18px;margin:0;font-style:italic;">{info_reason}</p>
+                </td>
+                <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
+                  <p class="text" style="font-size:18px;margin:0;">[REASONTEXT_GUEST]</p>
+                </td>
+              </tr>
+            </table>
             <table style="border-spacing:0;">
               <tr>
                 <td class="data" style="padding:0;width:300px;padding:6px 0;vertical-align:top;">
