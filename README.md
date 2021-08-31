@@ -5,7 +5,7 @@
 
 ## Styling
 
-There are two types of files, the template and the compiled template with the inline styles marked with -inline at the end.
+There are two types of files, the template and the compiled template with the inline styles marked with  at the end.
 
 The templates can be styled with classes within the style tags, when the template is ready it must still be compiled with the following tool:
 
