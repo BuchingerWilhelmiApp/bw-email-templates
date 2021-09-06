@@ -14,3 +14,8 @@ The templates can be styled with classes within the style tags, when the templat
 You can also create an account and test the template on different email clients:
 
 #### https://putsmail.com/
+
+# Backend
+
+These templates are used by the bwcontactform-backend to create emails. 
+Placeholders in brackets [] are used to replace values with data submitted by the frontend. The guest-mail features curled brackets {} that are replaced by different language versions of that keyword, done by the bwcontactform-backend as well. Check out the backend repo for further instructions: https://github.com/BuchingerWilhelmiApp/bw-contactformbackend
