@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Email Template</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    img {
+        border: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        padding-bottom: 60px;
+    }
+
+    .main {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #171a1b;
+    }
+
+    .data {
+        width: 300px;
+        padding: 6px 0;
+        vertical-align: top;
+    }
+
+    .text {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .text.first {
+        font-style: italic;
+    }
+
+    h2 {
+        color: #5BB6D6;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        margin: 30px 0 6px 0;
+    }
+
+    .section {
+        padding-top: 30px;
+    }
+
+    .lead {
+        font-size: 18px;
+        line-height: 170%;
+    }
+  </style>
+
+    </head>
+    <body>
+
+    <center class="wrapper">
+    <table class="main" width="100%">
+
+    <!-- TEST -->
+    <tr>
+        <td class="section">
+            <h2>{heading_healthinfo}</h2>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_name}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[FULLNAME]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_gender}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[GENDER_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_birthday}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[birthDateString]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_placeofbirth}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[birthPlace]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_job}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[job]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_nationality}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[nationality]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_languages}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[languagesOneLine_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_translator}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[TRANSLATOR_BOOL]</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="section">
+                <h2>{heading_contactinfo}</h2>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_email}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text"><a href="mailto: [email] ">[email]</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_address}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[FULLADDRESS]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_phone}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[contactPhone]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_otherphone}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[contactOtherPhoneNumber]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_fax}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[contactFax]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_emergencycontact}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[EMERGENCYCONTACT]</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="section">
+                <h2>{heading_yourstay}</h2>
+
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_therapytype}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[therapyType_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_arrival}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[arrivalDate]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_arrival_time}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[expectedTimeOfArrival]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_departure}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[departureDate]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_travelbycar}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[travelByCarBool_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- shuttle required -->
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_shuttlerequired}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[shuttleRequiredBool_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_media}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[mediaTV_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_talk}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[TALKBOOL_GUEST] | [talkDetail]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_contact_therapyplanning}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[therapyPlanningBool_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="section">
+                <h2>{heading_healthinfo}</h2>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_reason}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[REASONTEXT_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_weight}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[weight] kg</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_height}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[height] cm</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_allergies}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[ALLERGIESTEXT_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- currently disabled, might come back later -->
+                <!-- <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_support}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[DAILYSUPPORT_GUEST]</p>
+                        </td>
+                    </tr>
+                </table> -->
+                <table>
+                    <tr>
+                        <td class="data">
+                            <p class="text first">{info_contra}</p>
+                        </td>
+                        <td class="data">
+                            <p class="text">[EXCLUSIONTEXT_GUEST]</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+    <!-- MEDICATION TABLE SECTION -->
+
+
+    <tr>
+        <td>
+            <h2>{heading_medication}</h2>
+            <table style="width: 100%; padding: 0 12px;">
+            <th>
+                <tr>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-type-guest]</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-name-guest]</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-mo-guest]</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-no-guest]</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-ev-guest]</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-ni-guest]</td>
+                    <td style="border-bottom: 1px dashed #BDBCB7; font-weight: bold; padding: 3px; border-collapse: collapse;">[med-total-guest] mg/IE</td>
+                </tr>
+            </th>
+            <tbody>
+                [MEDTABLE_GUEST]
+            </tbody>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="section">
+            <h2>{heading_furtherinfo}</h2>
+            <table>
+                <tr>
+                    <td class="data">
+                        <p class="text first">{info_recommendation}</p>
+                    </td>
+                    <td class="data">
+                        <p class="text">[RECOMMENDATIONTEXT]</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="data">
+                        <p class="text first">{info_consent}</p>
+                    </td>
+                    <td class="data">
+                        <p class="text">[CONSENTTEXT]</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="data">
+                        <p class="text first">{info_filledout}</p>
+                    </td>
+                    <td class="data">
+                        <p class="text">[createdAt]</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    </table>
+    </center>
+    </body>
+</html>
