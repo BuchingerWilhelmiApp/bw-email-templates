@@ -129,7 +129,7 @@
                                     <span
                                       class="dynamic-text"
                                       style="font-size: 9px; font-weight: 700"
-                                      >Anna Foltinek</span
+                                      >[title] [lastName] [firstName]</span
                                     >
                                   </p>
                                   <p>
@@ -139,7 +139,7 @@
                                     <span
                                       class="dynamic-text"
                                       style="font-size: 9px; font-weight: 700"
-                                      >01.01.1900</span
+                                      >[birthDateString]</span
                                     >
                                   </p>
                                 </tr>
@@ -162,8 +162,7 @@
                                         class="dynamic-text"
                                         style="font-size: 9px; font-weight: 700"
                                       >
-                                        Hauptstraße 22 10000 Berlin,
-                                        Deutschland</span
+                                      [FULLADDRESS]</span
                                       >
                                     </p>
                                     <p style="opacity: 0">x</p>
@@ -209,7 +208,7 @@
                                   font-weight: 700;
                                 "
                               >
-                                Ja
+                                [legalPrivacy]
                               </p>
                             </td>
                           </tr>
@@ -291,7 +290,7 @@
                                   font-weight: 700;
                                 "
                               >
-                                Ja
+                                [legalDevelopAndUse]
                               </p>
                             </td>
                           </tr>
@@ -326,7 +325,7 @@
                                   font-weight: 700;
                                 "
                               >
-                                Ja
+                                [legalImprovement]
                               </p>
                             </td>
                           </tr>
@@ -359,7 +358,7 @@
                                   font-weight: 700;
                                 "
                               >
-                                Ja
+                                [legalScientific]
                               </p>
                             </td>
                           </tr>
@@ -398,7 +397,7 @@
                                   font-weight: 700;
                                 "
                               >
-                                Ja
+                                [legalContinuity]
                               </p>
                             </td>
                           </tr>
@@ -406,12 +405,35 @@
                         <p style="font-size: 9px; font-weight: 700">
                           Newsletter abbonieren
                         </p>
-                        <p style="font-size: 9px">
-                          Ja, ich will den Newsletter mit Infos zu Angeboten und
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="font-size: 9px">
+                                Ich will den Newsletter mit Infos zu Angeboten und
                           Neuigkeiten abonnieren und stimme der Nutzung der in
                           den Datenschutzhinweisen für App und Data Warehouse
                           unter 2.5 beschriebenen Daten für diese Zwecke zu.
-                        </p>
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p
+                                class="dynamic-text"
+                                style="
+                                  text-align: right;
+                                  font-size: 9px;
+                                  font-weight: 700;
+                                "
+                              >
+                                [legalNewsletter]
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
                         <br />
                         <p style="font-size: 9px; font-weight: 700">
                           2. Entbindung von der ärztlichen und sonstigen
@@ -442,7 +464,7 @@
                                   font-weight: 700;
                                 "
                               >
-                                Ja
+                                [legalConfidentiality]
                               </p>
                             </td>
                           </tr>
@@ -450,7 +472,7 @@
                         <p style="font-size: 9px; font-weight: bold">
                           Hiermit bestätige ich meine von mir am
                           <span class="dynamic-text" style="font-weight: 700">
-                            24.11.2021
+                            [createdAt]
                           </span>
                           im Rahmen des Anmeldevorgangs erteilten
                           Einwilligungserklärungen.
