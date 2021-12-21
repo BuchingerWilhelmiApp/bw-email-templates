@@ -122,7 +122,7 @@
                               >
                                 <tr>
                                   <p>
-                                    <span style="font-size: 9px">Name:</span>
+                                    <span style="font-size: 9px">{consentpdf_name}:</span>
                                     <span
                                       class="dynamic-text"
                                       style="font-size: 9px; font-weight: 700"
@@ -131,7 +131,7 @@
                                   </p>
                                   <p>
                                     <span style="font-size: 9px"
-                                      >Geburtsdatum</span
+                                      >{consentpdf_birthDate}</span
                                     >
                                     <span
                                       class="dynamic-text"
@@ -153,7 +153,7 @@
                                   <td>
                                     <p>
                                       <span style="font-size: 9px">
-                                        Adresse:
+                                        {consentpdf_address}:
                                       </span>
                                       <span
                                         class="dynamic-text"
@@ -177,7 +177,7 @@
                             letter-spacing: 0.05em;
                           "
                         >
-                          Angaben im Anmeldeformular
+                        {consentpdf_h1_angaben}
                         </h5>
                         <table
                           style="width: 100%"
@@ -188,12 +188,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                Ich willige ein, dass meine in dem
-                                Anmeldeformular freiwillig angegebenen und in
-                                Ziffer A.1. der Allgemeinen Patienteninformation
-                                zum Datenschutz näher bezeichneten Daten durch
-                                die Klinik Buchinger Wilhelmi verarbeitet
-                                werden.
+                                {consentpdf_p_ichwilligeein}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -218,41 +213,22 @@
                             letter-spacing: 0.05em;
                           "
                         >
-                          EINWILLIGUNGSERKLÄRUNGEN Für App und Data Warehouse
+                        {consentpdf_h1_einwilligunserklaerung}
                         </h5>
                         <p style="font-size: 9px; font-weight: bold">
-                          Datenschutzrechtliche Einwilligungserklärungen für App
-                          und Data Warehouse und Entbindung von der
-                          Schweigepflicht nach § 203 STGB bzw. Art. 199 des
-                          código penal
+                          {consentpdf_h2_datenschutzrechtliche}
                         </p>
                         <p style="font-size: 9px">
-                          Mir ist bewusst, dass die nachstehenden Einwilligungen
-                          freiwillig sind und ich ohne die Abgabe keine
-                          Nachteile zu erwarten habe.
-                        </p>
-                        <p style="font-size: 9px">
-                          Ich kann meine Einwilligungen jederzeit ohne Angabe
-                          von Gründen mit Wirkung für die Zukunft widerrufen
-                          (etwa über datenschutz@buchinger-wilhelmi.com). Im
-                          Falle eines Widerrufs werden die Daten von den
-                          Buchinger Wilhelmi Kliniken zukünftig nicht mehr an
-                          die Buchinger Wilhelmi Development & Holding GmbH
-                          übermittelt, sofern sie hierzu nicht aufgrund
-                          anderweitiger Rechtsgrundlagen zur Verarbeitung
-                          berechtigt oder verpflichtet sind. Weitere
-                          Informationen erhalte ich in den ausführlichen
-                          Datenschutzhinweisen für App und Data Warehouse.
+                          {consentpdf_p_miristbewusst}
                         </p>
                         <p style="font-size: 9px; font-weight: 700">
-                          Hiermit erkläre ich mein Einverständnis gegenüber der
-                          Klinik Buchinger Wilhelmi GmbH wie folgt:
+                          {consentpdf_h2_hermiterklaereich}"
                         </p>
                         <p style="font-size: 9px; font-weight: 700">
-                          1. Datenschutzrechtliche Einwilligungserklärung
+                          {consentpdf_h2_1.datenschutzrechtliche}
                         </p>
                         <p style="font-size: 9px; font-weight: 700">
-                          Entwicklung und Nutzung der App
+                          {consentpdf_h2_entwicklungundnutzung}
                         </p>
                         <table
                           style="width: 100%"
@@ -263,19 +239,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                Ich bin einverstanden, dass meine in den
-                                Datenschutzhinweisen für App und Data Warehouse
-                                unter 1. beschriebenen Daten und
-                                Gesundheitsdaten (nachfolgend zusammen kurz
-                                „Daten“) für die Entwicklung und den Betrieb der
-                                App an die Buchinger Wilhelmi Development &
-                                Holding GmbH übermittelt werden, um die in den
-                                Datenschutzhinweisen für App und Data Warehouse
-                                unter 2. aufgeführten Funktionen der App nutzen
-                                zu können, und so die Qualität meiner Behandlung
-                                in der Klinik Buchinger Wilhelmi GmbH bzw. der
-                                Clinica Buchinger Wilhelmi SA sowie deren
-                                Nachbereitung zu steigern.
+                                {consentpdf_p_ichbineinverstanden}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -293,7 +257,7 @@
                           </tr>
                         </table>
                         <p style="font-size: 9px; font-weight: 700">
-                          Verbesserung der Angebote
+                          {consentpdf_h2_verbesserung}
                         </p>
                         <table
                           style="width: 100%"
@@ -304,13 +268,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                Ich bin einverstanden, dass meine Daten
-                                pseudonymisiert an die Buchinger Wilhelmi
-                                Development & Holding GmbH übermittelt werden,
-                                um diese zur Fortentwicklung und Verbesserung
-                                der Angebote in der Klinik Buchinger Wilhelmi
-                                GmbH bzw. der Clinica Buchinger Wilhelmi SA
-                                auszuwerten.
+                                {consentpdf_p_verbesserung}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -328,7 +286,7 @@
                           </tr>
                         </table>
                         <p style="font-size: 9px; font-weight: 700">
-                          Wissenschaftliche Forschungszwecke
+                          {consentpdf_h2_wissenschaftliche}
                         </p>
                         <table
                           style="width: 100%"
@@ -339,11 +297,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                Ich bin einverstanden, dass meine Daten in
-                                anonymisierter Form an die Buchinger Wilhelmi
-                                Development & Holding GmbH übermittelt werden,
-                                um diese zu wissenschaftlichen Forschungszwecken
-                                auszuwerten.
+                                {consentpdf_p_wissenschaftliche}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -361,7 +315,7 @@
                           </tr>
                         </table>
                         <p style="font-size: 9px; font-weight: 700">
-                          Sachgerechte Fortführung der Behandlung
+                          {consentpdf_h2_sachgerechte}
                         </p>
                         <table
                           style="width: 100%"
@@ -372,17 +326,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                Ich war bereits in einer der Buchinger Wilhelmi
-                                Kliniken und bin damit einverstanden, dass die
-                                bei früheren Aufenthalten zu meiner Person
-                                verarbeiteten Daten in derselben oder der
-                                jeweils anderen Klinik auch bei künftigen
-                                Aufenthalten (erneut) genutzt und verarbeitet
-                                werden, und zwar auch durch die Buchinger
-                                Wilhelmi Development & Holding GmbH, um die
-                                Qualität meiner individuellen Behandlung zu
-                                steigern und eine sachgerechte Fortführung der
-                                Behandlung sicherzustellen.
+                                {consentpdf_p_sachgerechte}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -400,7 +344,7 @@
                           </tr>
                         </table>
                         <p style="font-size: 9px; font-weight: 700">
-                          Newsletter abbonieren
+                          {consentpdf_h2_newsletter}
                         </p>
                         <table
                           style="width: 100%"
@@ -411,11 +355,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                Ich will den Newsletter mit Infos zu Angeboten
-                                und Neuigkeiten abonnieren und stimme der
-                                Nutzung der in den Datenschutzhinweisen für App
-                                und Data Warehouse unter 2.5 beschriebenen Daten
-                                für diese Zwecke zu.
+                                {consentpdf_p_newsletter}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -434,8 +374,7 @@
                         </table>
                         <br />
                         <p style="font-size: 9px; font-weight: 700">
-                          2. Entbindung von der ärztlichen und sonstigen
-                          Berufsverschwiegenheit
+                          {consentpdf_h2_entbindung}
                         </p>
                         <table
                           style="width: 100%"
@@ -446,11 +385,7 @@
                           <tr>
                             <td style="width: 80%">
                               <p style="font-size: 9px">
-                                In dem Umfang, in dem ich meine
-                                datenschutzrechtliche Einwilligung erteilt habe,
-                                entbinde ich die für die Klinik tätigen Personen
-                                im Hinblick auf meine Daten von ihrer
-                                Schweigepflicht.
+                                {consentpdf_p_entbindung}
                               </p>
                             </td>
                             <td style="width: 20%">
@@ -468,12 +403,7 @@
                           </tr>
                         </table>
                         <p style="font-size: 9px; font-weight: bold">
-                          Hiermit bestätige ich meine von mir am
-                          <span class="dynamic-text" style="font-weight: 700">
-                            [createdAt] UTC
-                          </span>
-                          im Rahmen des Anmeldevorgangs erteilten
-                          Einwilligungserklärungen.
+                          {consentpdf_h2_bestaetigung}
                         </p>
                         <table
                           style="margin-top: 80px; width: 100%"
@@ -491,7 +421,7 @@
                                   font-size: 9px;
                                 "
                               >
-                                Ort/Datum
+                              {consentpdf_p_ortdatum}
                               </p>
                             </td>
                             <td style="height: 100%; width: 50%">
@@ -503,7 +433,7 @@
                                   font-size: 9px;
                                 "
                               >
-                                Unterschrift Patient:in
+                              {consentpdf_p_unterschrift}
                               </p>
                             </td>
                           </tr>
