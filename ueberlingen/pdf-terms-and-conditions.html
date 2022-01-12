@@ -213,9 +213,10 @@
                         <p style="width: 80%">
                           {consentpdf_h2_hermiterklaereich}
                         </p>
-                        <p style="font-weight: 700">
+                        <!-- yeah this was a bad idea in the first place, so let's take it out 
+                          <p style="font-weight: 700">
                           {consentpdf_h2_1.datenschutzrechtliche}
-                        </p>
+                        </p> -->
                         <p style="font-weight: 700">
                           {h1_datenschutzrechtliche_headline}
                         </p>
@@ -320,9 +321,25 @@
                         <p style="margin-bottom: 0; font-weight: 700">
                           {consentpdf_h2_newsletter}
                         </p>
-                        <p style="margin-top: 0; width: 80%">
-                          {consentpdf_p_newsletter}
-                        </p>
+                        <table
+                          style="margin-top: 0; width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr style="margin-top: 0">
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_newsletter}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalNewsletter]
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
                         <p style="margin-bottom: 0; font-weight: 700">
                           {consentpdf_h2_entbindung}
                         </p>
@@ -340,7 +357,7 @@
                             </td>
                             <td style="width: 20%">
                               <p style="text-align: center; font-weight: 700">
-                                [legalNewsletter]
+                                [legalConfidentiality]
                               </p>
                             </td>
                           </tr>
