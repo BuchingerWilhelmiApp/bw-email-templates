@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- the temporary version not sending everything to the client -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Email Template</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    img {
+        border: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        padding-bottom: 60px;
+    }
+
+    .main {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #171a1b;
+    }
+
+    .data {
+        width: 300px;
+        padding: 6px 0;
+        vertical-align: top;
+    }
+
+    .text {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .text.first {
+        font-style: italic;
+    }
+
+    h2 {
+        color: #5BB6D6;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        margin: 30px 0 6px 0;
+    }
+
+    .section {
+        padding-top: 30px;
+    }
+
+    .lead {
+        font-size: 18px;
+        line-height: 170%;
+    }
+</style>
+    </head>
+    <body>
+
+    <center class="wrapper">
+    <table class="main" width="100%">
+
+
+    <!-- BANNER IMAGE -->
+
+    <tr>
+        <td>
+        <a href="#"><img src="https://buchingerwilhelmiapp.github.io/bw-static-items/email/img/registration_h.png" alt="banner" border="0" width="600" style="max-width: 100%;"></a>
+        </td>
+    </tr>
+
+
+    <!-- GREETING -->
+
+    <tr>
+        <td style="padding: 10px">
+            <p class="lead">{DEAR}  [firstName] [lastName],</p>
+            <p class="lead">
+            {intro1}
+            </p>
+            <h1>
+            {header1}
+            </h1>
+            <p class="lead">
+            {intro2}
+            </p>
+            <p class="lead">
+            {WELCOME_AGAIN}
+            </p>
+        </td>
+    </tr>
+
+
+    <!-- FOOTER SECTION -->
+    </table>
+    </center>
+    </body>
+</html>
