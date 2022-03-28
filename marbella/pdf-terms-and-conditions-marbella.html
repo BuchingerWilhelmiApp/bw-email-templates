@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no"
+    />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings
+            xmlns:o="urn:schemas-microsoft-com:office:office"
+          >
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+      <style>
+        td,
+        th,
+        div,
+        p,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Segoe UI", sans-serif;
+          mso-line-height-rule: exactly;
+        }
+      </style>
+    <![endif]-->
+    <style>
+      @media (max-width: 600px) {
+        .sm-w-full {
+          width: 100% !important;
+        }
+        .sm-px-24 {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      word-break: break-word;
+      -webkit-font-smoothing: antialiased;
+      background-color: #ffffff;
+    "
+  >
+    <div role="article" aria-roledescription="email" aria-label="" lang="en">
+      <table
+        style="
+          width: 100%;
+          font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+            sans-serif;
+        "
+        cellpadding="0"
+        cellspacing="0"
+        role="presentation"
+      >
+        <tr>
+          <td align="center">
+            <table
+              class="sm-w-full"
+              style="width: 91.666667%"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+            >
+              <tr>
+                <td align="center" class="sm-px-24">
+                  <table
+                    style="
+                      display: flex;
+                      width: 100%;
+                      flex-direction: column;
+                      justify-content: center;
+                    "
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          border-radius: 4px;
+                          padding: 48px;
+                          padding-left: 96px;
+                          padding-right: 0;
+                          text-align: left;
+                          font-size: 16px;
+                          line-height: 24px;
+                          color: #1f2937;
+                        "
+                      >
+                        <h5
+                          style="
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                          "
+                        >
+                          {h1_einwilligung_headline}
+                        </h5>
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 50%">
+                              <table
+                                style="width: 100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <p>
+                                    <span>{consentpdf_name}:</span>
+                                    <span style="font-weight: 700"
+                                      >[title] [lastName] [firstName]</span
+                                    >
+                                  </p>
+                                  <p>
+                                    <span>{consentpdf_birthDate}</span>
+                                    <span style="font-weight: 700"
+                                      >[birthDateString]</span
+                                    >
+                                  </p>
+                                </tr>
+                              </table>
+                            </td>
+                            <td style="width: 50%">
+                              <table
+                                style="width: 100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td>
+                                    <p>
+                                      <span> {consentpdf_address}:</span>
+                                      <span style="font-weight: 700">
+                                        [FULLADDRESS]</span
+                                      >
+                                    </p>
+                                    <p style="opacity: 0">x</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr style="display: flex;">
+                            <td>
+                              <h5
+                                style="
+                                  color: #5bb6d6;
+                                  margin: 0;
+                                  text-transform: uppercase;
+                                  letter-spacing: 0.05em;
+                                "
+                              >
+                                {consentpdf_h1_angaben}
+                              </h5>
+                            </td>
+                          </tr>  
+                        </table>
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_ichwilligeein}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalOptionalFields]
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <h5
+                          style="
+                            color: #5bb6d6;
+                            margin-top: 64px;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                          "
+                        >
+                          {consentpdf_h1_einwilligunserklaerung}
+                        </h5>
+                        <p style="margin-top: 0; width: 80%">
+                          {consentpdf_h2_datenschutzrechtliche}
+                        </p>
+                        <p style="width: 80%">{consentpdf_p_miristbewusst}</p>
+                        <p style="width: 80%">
+                          {consentpdf_h2_hermiterklaereich_marbella}
+                        </p>
+                        <!-- yeah this was a bad idea in the first place, so let's take it out 
+                          <p style="font-weight: 700">
+                          {consentpdf_h2_1.datenschutzrechtliche}
+                        </p> -->
+                        <p style="font-weight: 700">
+                          1. {h1_datenschutzrechtliche_headline}
+                        </p>
+                        <p style="margin-bottom: 0; font-weight: 700">
+                          {consentpdf_h2_entwicklungundnutzung}
+                        </p>
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_ichbineinverstanden}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalDevelopAndUse]
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin-bottom: 0; font-weight: 700">
+                          {consentpdf_h2_verbesserung}
+                        </p>
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_verbesserung}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalImprovement]
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_furtherinfolink}
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin-bottom: 0; font-weight: 700">
+                          {consentpdf_h2_wissenschaftliche}
+                        </p>
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_wissenschaftliche}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalScientific]
+                              </p>
+                            </td>
+                          </tr>
+                            <tr>
+                              <td style="width: 80%">
+                                <p style="margin-top: 0">
+                                  {consentpdf_furtherinfolink}
+                                </p>
+                              </td>
+                          </tr>
+                        </table>
+                        <p style="margin-bottom: 0; font-weight: 700">
+                          {consentpdf_h2_sachgerechte}
+                        </p>
+                        <table
+                          style="width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_sachgerechte}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalContinuity]
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_furtherinfolink}
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin-bottom: 0; font-weight: 700">
+                          {consentpdf_h2_newsletter}
+                        </p>
+                        <table
+                          style="margin-top: 0; width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr style="margin-top: 0">
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_newsletter}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalNewsletter]
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin-bottom: 0; font-weight: 700">
+                          2. {consentpdf_h2_entbindung}
+                        </p>
+                        <table
+                          style="margin-top: 0; width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr style="margin-top: 0">
+                            <td style="width: 80%">
+                              <p style="margin-top: 0">
+                                {consentpdf_p_entbindung}
+                              </p>
+                            </td>
+                            <td style="width: 20%">
+                              <p style="text-align: center; font-weight: 700">
+                                [legalConfidentiality]
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <p>{consentpdf_h2_bestaetigung}</p>
+                        <table
+                          style="margin-top: 80px; width: 100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td style="height: 100%; width: 50%">
+                              <p
+                                style="
+                                  border-top: 1px solid gray;
+                                  margin: 4px;
+                                  margin-right: 32px;
+                                "
+                              >
+                                {consentpdf_p_ortdatum}
+                              </p>
+                            </td>
+                            <td style="height: 100%; width: 50%">
+                              <p
+                                style="
+                                  border-top: 1px solid gray;
+                                  margin: 4px;
+                                  margin-left: 32px;
+                                "
+                              >
+                                {consentpdf_p_unterschrift}
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="height: 48px"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
